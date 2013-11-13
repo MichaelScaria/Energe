@@ -1,7 +1,7 @@
 body {
 	margin: 0;
 	/*background-color: rgb(245,245,245);*/
-	background: red;
+	background: rgb(240,240,240);
 }
 
 
@@ -20,8 +20,8 @@ body {
 		color-stop(0.69, rgb(250,106,104))
 	);*/
 	/*background-image: linear-gradient(-180deg,#dc5152 0,rgb(201,69,71) 100%);*/
-	background-image: linear-gradient(-180deg,rgb(221,89,91) 0,rgb(201,69,71) 100%);
-	-webkit-box-shadow: rgba(0,0,0,0.25) 0 3px 4px 0,rgba(0,0,0,0.15) 0 -1px 0 0 inset;
+	background-image: linear-gradient(-180deg,#39bf9f 0, #02906e 100%);
+	-webkit-box-shadow: rgba(0,0,0,0.25) 0 3px 5px 0,rgba(0,0,0,0.2) 0 -1px 0 0 inset;
 	height: 90px;
 	position: fixed;
 	width: 100%;
@@ -30,19 +30,20 @@ body {
 	left: 0;
 }
 
-.content {
-	background-color: rgb(235,235,235);
-	margin-top: 90px;
-	height: 1000px;
+.splash {
+	/*background: url("../images/bkg-3.png") no-repeat;*/
+	height: 580px;
+	background: #312e33 url("../images/bkg-3.png") no-repeat scroll center 0;
+	background-size: auto 90%;
+	overflow: hidden;
 	width: 100%;
+	margin-top: 90px;
+	vertical-align: baseline;
 }
 
-.background{
-    background:url('http://anniegreenjeans.com/wp-content/uploads/2012/08/windmillsmall1.jpg');
-    position:absolute;
-    top:287px;
-    left:0px;
-    z-index:100;
-    width: 100%;
-    height: 100px;
-    }  
+.logo {
+	 width: 234px;
+    margin: 0 auto;
+}
+
+
