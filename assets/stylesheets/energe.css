@@ -13,17 +13,33 @@ body {
 
 	/*background-image: linear-gradient(-180deg,#39bf9f 0, #02906e 100%);*/
 	-webkit-box-shadow: rgba(0,0,0,0.25) 0 3px 5px 0,rgba(0,0,0,0.2) 0 -1px 0 0 inset;
-	height: 13%;
+	height: 120px;
 	position: fixed;
 	width: 100%;
 	top: 0;
 	z-index: 1;
 	left: 0;
+
+}
+
+.header .background {
+
+	-webkit-filter: blur(10px);
+    -moz-filter: blur(10px);
+    -o-filter: blur(10px);
+    -ms-filter: blur(10px);
+    filter: blur(10px);
+    opacity: 1;
 }
 
 .logo {
 	 width: 234px;
-    margin: 0 auto;
+    padding: 0 0 0 7%;
+    /*margin: 0 auto;*/
+}
+
+.logo .image{
+	padding-top: 12px;
 }
 
 .title {
