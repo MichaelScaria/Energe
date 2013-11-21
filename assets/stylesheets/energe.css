@@ -33,8 +33,8 @@ body {
 .splash {
 	/*background: url("../images/bkg-3.png") no-repeat;*/
 	height: 580px;
-	background: #312e33 url("../images/bkg-3.png") no-repeat scroll center 0;
-	background-size: auto 90%;
+	background: #30383b url("../images/bkg-4.png") no-repeat scroll center 0;
+	background-size: auto 100%;
 	overflow: hidden;
 	width: 100%;
 	margin-top: 90px;
