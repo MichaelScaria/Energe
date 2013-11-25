@@ -3,10 +3,12 @@
 		<link href="assets/stylesheets/energe.css" rel="stylesheet" type="text/css">
 		<link href="http://fonts.googleapis.com/css?family=Merriweather:400,300,700" rel="stylesheet" type="text/css">
 		<script src="assets/javascript/energe.js"></script>
+		<script type="text/javascript" src="assets/javascript/skrollr.min.js"></script>
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 		<script>
 		$(document).ready
 		(
+				var s = skrollr.init();
 		    function(e)
 		    {
 		        $(window).scroll(function() {
@@ -14,26 +16,11 @@
 		            
 		            if( screenTop > 100 ) 
 		            {
-		              // $(".logo .image").addClass( "cropped" );
-		              $(".logo .image").animate({
-									  fontSize: 50 //some unimportant CSS to animate so we get some values
-									},
-									{
-									  step: function(now, fx) { //now is the animated value from initial css value
-									      $(this).css('clip', 'rect(0px, '+now+'px, 100px, 0px)')
-									  }
-									}, 10000);
+		              $(".logo .image").addClass( "cropped" );
 		            }    
 		            else
 		            {
-		              $(".logo .image").animate({
-									  fontSize: 100 //some unimportant CSS to animate so we get some values
-									},
-									{
-									  step: function(now, fx) { //now is the animated value from initial css value
-									      $(this).css('clip', 'rect(0px, '+now+'px, 100px, 0px)')
-									  }
-									}, 10000);
+		              $(".logo .image").removeClass( "cropped" );
 		            }
 		            
 		        });
@@ -52,9 +39,14 @@
 		</div>
 			<div class="content">
 				<div class="splash">
-					<div class="title" style='vertical-align: middle;'>
+					<div class="title">
 		<!-- 				Creating an energy efficient house has never been easier.-->	
-					ENERGY EFFICIENT HOUSING. MADE EASY.		
+						ENERGY EFFICIENT HOUSING. MADE EASY.		
+					</div>
+				</div>
+				<div class="steps">
+					<div class="title">
+		 				Creating an energy efficient house has never been easier.	
 					</div>
 				</div>
 			</div>
