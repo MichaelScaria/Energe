@@ -8,21 +8,12 @@
 		<script>
 		$(document).ready
 		(
-				var s = skrollr.init();
 		    function(e)
 		    {
 		        $(window).scroll(function() {
 		          var screenTop = $(document).scrollTop();
-		            
-		            if( screenTop > 100 ) 
-		            {
-		              $(".logo .image").addClass( "cropped" );
-		            }    
-		            else
-		            {
-		              $(".logo .image").removeClass( "cropped" );
-		            }
-		            
+		           $(".logo .image").animate({height:'200px'},
+				            {queue:false, duration:25, easing: 'swing'})
 		        });
 		    }    
 		);
