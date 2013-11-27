@@ -6,18 +6,19 @@
 		<script type="text/javascript" src="assets/javascript/skrollr.min.js"></script>
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 		<script>
-		$(document).ready
-		(
-		    function(e)
-		    {
-		        $(window).scroll(function() {
-		          var screenTop = $(document).scrollTop();
-		           $(".logo .image").animate({color:'black'},
-				            {queue:false, duration:25, easing: 'swing'})
+		$(window).on('scroll', function () {
+		    var scrollTop     = $(window).scrollTop(),
+		        elementOffset = $('.steps').offset().top,
+		        distance      = (elementOffset - scrollTop);
 
-		        });
-		    }    
-		);
+		    console.log(distance)
+		    if (distance <= 100) {
+		    	var step1 = document.getElementById('header');
+		    	var step2 = document.getElementById('step2');
+		    	var step3 = document.getElementById('step3');
+				step1.style.left = (step1.style.left+10)+'px';
+		    };
+		});
 		</script>
         
 	</head>
@@ -39,6 +40,14 @@
 				<div class="steps">
 					<div class="title">
 		 				Creating an energy efficient house has never been easier.	
+					</div>
+					<div class="circles">
+						<div class="circle step1">
+						</div>
+						<div class="circle step2">
+						</div>
+						<div class="circle step3">
+						</div>
 					</div>
 				</div>
 			</div>
