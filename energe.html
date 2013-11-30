@@ -5,21 +5,6 @@
 		<script src="assets/javascript/energe.js"></script>
 		<script type="text/javascript" src="assets/javascript/skrollr.min.js"></script>
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-		<script>
-		$(window).on('scroll', function () {
-		    var scrollTop     = $(window).scrollTop(),
-		        elementOffset = $('.steps').offset().top,
-		        distance      = (elementOffset - scrollTop);
-
-		    console.log(distance)
-		    if (distance <= 100) {
-		    	var step1 = document.getElementById('header');
-		    	var step2 = document.getElementById('step2');
-		    	var step3 = document.getElementById('step3');
-				step1.style.left = (step1.style.left+10)+'px';
-		    };
-		});
-		</script>
         
 	</head>
 	<body>
@@ -53,3 +38,30 @@
 			</div>
 	</body>
 </html>
+
+<script>
+  $(window).on('scroll', function () {
+      var scrollTop     = $(window).scrollTop(),
+          elementOffset = $('.steps').offset().top,
+          distance      = (elementOffset - scrollTop);
+
+      console.log('body:' + $('.step1').parent().parent().height())
+      // console.log($('.circle').css('margin-top'))
+      // console.log(15.0 / $('.step1').parent().parent().height() * 100)
+      if (distance <= 500) {
+        $('.circle').css('margin-top', 1);
+        $('.step1').css('background', 'black');
+        // animateSteps = setInterval(function() {
+        //   counter++;
+        //   $('.step1').css('top', 500 +'px');
+        // }, 5000);
+
+      }
+      else {
+        // $('.circle').css('margin-top', 15.0 / $('.step1').parent().parent().height());
+      };
+  });
+
+  var counter = 0;
+
+</script>

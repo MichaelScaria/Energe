@@ -13,13 +13,13 @@ body {
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 300;
-  src: local('Open Sans Light'), local('OpenSans-Light'), url(https://themes.googleusercontent.com/static/fonts/opensans/v6/DXI1ORHCpsQm3Vp6mXoaTaRDOzjiPcYnFooOUGCOsRk.woff) format('woff');
+  src: url('../fonts/OpenSans-Light.woff'); /*URL to font*/
 }
 @font-face {
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 600;
-  src: local('Open Sans Semibold'), local('OpenSans-Semibold'), url(https://themes.googleusercontent.com/static/fonts/opensans/v6/MTP_ySUJH_bn48VBG8sNSqRDOzjiPcYnFooOUGCOsRk.woff) format('woff');
+  src: url('../fonts/OpenSans-Semibold.woff'); /*URL to font*/
 }
 
 .header {
@@ -85,7 +85,7 @@ body {
 .content .steps .title {
 /*     width: 44%;
 */    /*top, right, bottom, left*/
-    padding: 5% 0 0 0;
+    padding: 4% 0 0 0;
     color: black;
     font-size: 38px;
     font-family: 'Open Sans';
@@ -115,16 +115,19 @@ body {
   width: 150px;
   height: 150px;
   background: url(http://www.hawthornethreads.com/images/timeless_treasures/300/timeless_treasures_house_designer_crosshatch_sketch_in_white_and_black.jpg); no-repeat scroll center 0;
+  background: red;
 }
 
 .step2 {
   width: 150px;
   height: 150px;
   background: url(http://www.hawthornethreads.com/images/timeless_treasures/300/timeless_treasures_house_designer_crosshatch_sketch_in_white_and_black.jpg); no-repeat scroll center 0;
+  background: red;
 }
 
 .step3 {
   width: 150px;
   height: 150px;
   background: url(http://www.hawthornethreads.com/images/timeless_treasures/300/timeless_treasures_house_designer_crosshatch_sketch_in_white_and_black.jpg); no-repeat scroll center 0;
+  background: red;
 }
