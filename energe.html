@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 	<head>
+		<title>Energe</title>
 		<link href="assets/stylesheets/energe.css" rel="stylesheet" type="text/css">
 		<link href="http://fonts.googleapis.com/css?family=Merriweather:400,300,700" rel="stylesheet" type="text/css">
 		<script src="assets/javascript/energe.js"></script>
@@ -31,6 +32,11 @@
 						<div class="circle step2"></div>
 						<div class="circle step3"></div>
 					</div>
+					<div class="instructions">
+						<div class="instruction">Pick an area that suits your needs using our tech.</div>
+						<div class="instruction middle">Select a house that best fits your lifestyle.</div>
+						<div class="instruction">Follow proper energy conservation techniques.</div>
+					</div>
 				</div>
 			</div>
 	</body>
@@ -44,8 +50,9 @@
 
       // console.log('body:' + $('.step1').parent().parent().height())
       //animate circles up/down as user scrolls towards/away from it
-      if (distance <= 400) {
-        $('.circle').css('margin-top', .015 * $('.step1').parent().parent().height());
+      if (distance <= 500) {
+        $('.circle').css('margin-top', .02 * $('.step1').parent().parent().height());
+        $('.instruction').css('margin-top', .02 * $('.step1').parent().parent().height());
         // $('.image').css('background-color: red');
         // $('.image').css('margin-top', 1);
       }
