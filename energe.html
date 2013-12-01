@@ -27,12 +27,9 @@
 		 				Creating an energy efficient house has never been easier.	
 					</div>
 					<div class="circles">
-						<div class="circle step1">
-						</div>
-						<div class="circle step2">
-						</div>
-						<div class="circle step3">
-						</div>
+						<div class="circle step1"></div>
+						<div class="circle step2"></div>
+						<div class="circle step3"></div>
 					</div>
 				</div>
 			</div>
@@ -45,21 +42,21 @@
           elementOffset = $('.steps').offset().top,
           distance      = (elementOffset - scrollTop);
 
-      console.log('body:' + $('.step1').parent().parent().height())
-      // console.log($('.circle').css('margin-top'))
-      // console.log(15.0 / $('.step1').parent().parent().height() * 100)
-      if (distance <= 500) {
-        $('.circle').css('margin-top', 1);
-        $('.step1').css('background', 'black');
-        // animateSteps = setInterval(function() {
-        //   counter++;
-        //   $('.step1').css('top', 500 +'px');
-        // }, 5000);
-
+      // console.log('body:' + $('.step1').parent().parent().height())
+      //animate circles up/down as user scrolls towards/away from it
+      if (distance <= 400) {
+        $('.circle').css('margin-top', .015 * $('.step1').parent().parent().height());
+        // $('.image').css('background-color: red');
+        // $('.image').css('margin-top', 1);
       }
       else {
-        // $('.circle').css('margin-top', 15.0 / $('.step1').parent().parent().height());
+        $('.circle').css('margin-top', .15 * $('.step1').parent().parent().height());
       };
+
+      //if steps is fully on screen, change logo background to black
+      if (distance > 0) {
+        $('.circle').css('background-color: red');
+      }
   });
 
   var counter = 0;

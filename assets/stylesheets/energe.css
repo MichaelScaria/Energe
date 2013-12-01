@@ -93,8 +93,9 @@ body {
 }
 
 .circles {
-  margin: 0 auto;
-  width: auto;
+  margin-left: 12%;
+  width: 100%;
+
 }
 
 .circle {
@@ -103,31 +104,33 @@ body {
   -o-transition: all 1.0s ease-in-out;  
   -ms-transition: all 1.0s ease-in-out;  
   transition: all 1.0s ease-in-out;
-  -webkit-border-radius: 999px;
-  -moz-border-radius: 999px;
-  border-radius: 999px;
-  behavior: url(PIE.htc);
+  /*-webkit-border-radius: 999px;*/
+  /*-moz-border-radius: 999px;*/
+  /*border-radius: 999px;*/
+  /*behavior: url(PIE.htc);*/
   display: inline-block;
   margin-top: 15%;
 }
 
 .step1 {
-  width: 150px;
-  height: 150px;
-  background: url(http://www.hawthornethreads.com/images/timeless_treasures/300/timeless_treasures_house_designer_crosshatch_sketch_in_white_and_black.jpg); no-repeat scroll center 0;
-  background: red;
+  width: 235px;
+  height: 138px;
+  background: url("../images/step1.png") no-repeat scroll center 0;
+  background-size: 235px 138px;
+  margin-bottom: 2%;
 }
 
 .step2 {
-  width: 150px;
-  height: 150px;
+  width: 200px;
+  height: 200px;
   background: url(http://www.hawthornethreads.com/images/timeless_treasures/300/timeless_treasures_house_designer_crosshatch_sketch_in_white_and_black.jpg); no-repeat scroll center 0;
   background: red;
+  margin: 0 15% 0 8%;
 }
 
 .step3 {
-  width: 150px;
-  height: 150px;
+  width: 200px;
+  height: 200px;
   background: url(http://www.hawthornethreads.com/images/timeless_treasures/300/timeless_treasures_house_designer_crosshatch_sketch_in_white_and_black.jpg); no-repeat scroll center 0;
   background: red;
 }
