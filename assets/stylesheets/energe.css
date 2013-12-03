@@ -121,11 +121,12 @@ body {
 }
 
 .step2 {
-  width: 200px;
-  height: 200px;
-  background: url(http://www.hawthornethreads.com/images/timeless_treasures/300/timeless_treasures_house_designer_crosshatch_sketch_in_white_and_black.jpg); no-repeat scroll center 0;
-  background: red;
-  margin: 0 15% 0 12%;
+  width: 233px;
+  height: 172px;
+  background: url("../images/step2.png") no-repeat scroll center 0;
+  background-size: 233px 172px;
+  margin: 0 12% 0 12%;
+  margin-bottom: 2%;
 }
 
 .step3 {
