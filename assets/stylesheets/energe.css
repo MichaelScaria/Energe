@@ -1,6 +1,6 @@
 body {
 	margin: 0;
-	/*background-color: rgb(245,245,245);*/
+	padding:0;
 	background: rgb(240,240,240);
 }
 
@@ -30,7 +30,7 @@ body {
 	position: fixed;
 	width: 100%;
 	top: 0;
-	z-index: 1;
+	z-index: 2;
 	left: 0;
 
 }
@@ -47,8 +47,8 @@ body {
 
 .logo {
 	 width: 234px;
-    padding: 0 0 0 7%;
-    /*margin: 0 auto;*/
+   padding: 0 0 0 7%;
+   /*margin: 0 auto;*/
 }
 
 .logo .image{
@@ -64,18 +64,25 @@ body {
 }
 
 .splash {
-  height: 700px;
-  background: url("../images/bkg-6.png") no-repeat scroll center 0;
-    background-size:100% 95%;
+  height: 650px;
+  background: url(../images/bkg-6.png) 50% 0 no-repeat fixed; 
+  margin: 0;
+  padding: 0;
 }
 
-.content .splash .title {
-	 width: 44%;
-	/*top, right, bottom, left*/
-  padding: 9% 0 0 7%;
+.splash .title {
+/*	width: 44%;
+*/	/*top, right, bottom, left*/
+  padding: 17% 0 0 0;
   color: rgb(249, 249, 249);
-  font-size: 40px;
+  font-size: 52px;
   font-family: 'Verlag Bold';
+  width: 100%;
+	text-align: center;
+}
+
+.content {
+  z-index: 1;
 }
 
 .steps {
