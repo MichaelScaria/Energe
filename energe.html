@@ -20,6 +20,7 @@
 			<div class="title">
 				ENERGY EFFICIENT HOUSING. MADE EASY.		
 			</div>
+			<a class="button" href="#geolocate">TRY IT NOW</a>
 		</div>
 		<div class="content">
 			<div class="steps">
@@ -43,10 +44,9 @@
 
 <script>
   $(window).on('scroll', function () {
-      var scrollTop     = $(window).scrollTop(),
-          elementOffset = $('.steps').offset().top,
-          distance      = (elementOffset - scrollTop);
-
+      var scrollTop = $(window).scrollTop(), elementOffset = $('.steps').offset().top, distance = (elementOffset - scrollTop);
+      var height = $(window).height();
+	  var scrollTop = $(window).scrollTop();
       // console.log('body:' + $('.step1').parent().parent().height())
       //animate circles up/down as user scrolls towards/away from it
       if (distance <= 500) {

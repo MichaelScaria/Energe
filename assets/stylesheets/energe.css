@@ -81,6 +81,24 @@ body {
 	text-align: center;
 }
 
+.splash .button {
+	border-color: white;
+  background: none;
+  border: 1px solid #fff!important;
+  padding: 20px 55px;
+  font-size: 1em;
+  text-transform: uppercase;
+  letter-spacing: 0.20em;
+  text-decoration: none;
+  outline: 0;
+  vertical-align: baseline; 
+white-space: normal; 
+margin: 0; 
+color: -webkit-link;
+text-decoration: underline;
+cursor: auto;
+}
+
 .content {
   z-index: 1;
 }
@@ -92,7 +110,7 @@ body {
 .content .steps .title {
 /*     width: 44%;
 */    /*top, right, bottom, left*/
-    padding: 2% 0 0 0;
+    padding: 3% 0 0 0;
     color: black;
     font-size: 38px;
     font-family: 'Open Sans';
