@@ -34,8 +34,7 @@ body {
 	left: 0;
 
 }
-
-
+/*
 .header.changed
 {
     filter:blur(4px);
@@ -43,7 +42,7 @@ body {
   -ms-filter:blur(4px);
   -moz-filter:blur(4px);
   -webkit-filter:blur(4px);
-}
+}*/
 
 .logo {
 	 width: 234px;
@@ -51,21 +50,9 @@ body {
    /*margin: 0 auto;*/
 }
 
-.logo .image{
-	/*padding-top: 12px;*/
-    width: 215px;
-    height: 97px;
-    /*clip:rect(0px,500px,100px,0px); position: absolute; top: 12px;*/
-}
-
-.logo .image.cropped {
-    /*clip:rect(0px,50px,100px,0px); position: absolute; top: 12px;*/
-    
-}
-
 .splash {
   height: 650px;
-  background: url(../images/bkg-6.png) 50% 0 no-repeat fixed; 
+  background: url(../images/bkg-6.png) 50% 0 no-repeat fixed; */
   margin: 0;
   padding: 0;
 }
@@ -86,7 +73,7 @@ body {
 }
 
 .steps {
-    height: 1500px;
+    height: 550px;
 }
 
 .content .steps .title {
@@ -110,7 +97,7 @@ body {
 }
 
 .circles {
-  margin-left: 14%;
+  margin-left:11%;
   width: 100%;
 
 }
@@ -126,38 +113,35 @@ body {
   /*border-radius: 999px;*/
   /*behavior: url(PIE.htc);*/
   display: inline-block;
-  margin-top: 15%;
+  margin-top: 18%;
+  width: 180px;
+  height: 180px;
+  
 }
 
 .step1 {
-  width: 220px;
-  height: 220px;
+  width: 262px;
   background: url(../images/step1.png) no-repeat scroll center 0;
-  background-size: 220px 220px;
-  /*margin-bottom: 2%;*/
+  background-size: 262px 180px;
 }
 
 .step2 {
-  width: 233px;
-  height: 172px;
   background: url(../images/step2.png) no-repeat scroll center 0;
-  background-size: 233px 172px;
-  margin: 0 13% 0 13%;
-  /*margin-bottom: 2%;*/
+  margin: 0 14% 0 14%;
+  background-size: 180px 180px;
 }
 
 .step3 {
-  width: 210px;
-  height: 210px;
   background: url(../images/step3.png) no-repeat scroll center 0;
-  background-size: 210px 210px;
-  margin-bottom: -2%;
+  margin-bottom: -1%;
+  background-size: 180px 180px;
 }
 
 .instructions {
-  margin-left: 12%;
+  /*margin-left: 12%;*/
   width: 100%;
   font-family: 'Open Sans';
+  text-align: center;;
 
 }
 
@@ -169,4 +153,22 @@ body {
 .instructions .middle {
   padding: 0 4% 0 4%;
 
+}
+
+.tips {
+  height: 650px;
+  background-color: #27AE60; 
+  /*margin: 0;*/
+  /*padding-top: 600px;*/
+  background-position: 50% 225px;
+}
+
+.tips .title {
+  /*top, right, bottom, left*/
+  padding: 5% 0 0 0;
+  color: rgb(249, 249, 249);
+  font-size: 52px;
+  font-family: 'Verlag Bold';
+  width: 100%;
+  text-align: center;
 }
