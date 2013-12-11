@@ -175,27 +175,37 @@ float: left;
   display: inline-block;
   float: left;
   height: 210px;
-  width: 24.99%;
-  -webkit-transition: all 1.0s ease-in-out;  
-  -moz-transition: all 1.0s ease-in-out;  
-  -o-transition: all 1.0s ease-in-out;  
-  -ms-transition: all 1.0s ease-in-out;  
+  width: 27.99%;
   transition: all 1.0s ease-in-out;
   
 }
 
-.element .image1 {
-  width: 262px;
-  background: url(../images/step1.png) no-repeat scroll center 0;
-  background-size: 262px 180px;
-  height: 180px;
+.element.middle{
+  /*margin: 0 7% 0 7%;*/
 }
 
-.geo {
-  display: block;
-  margin: 0;
-  padding: 0;
-  border: 0
+.element .activity_1 {
+  width: 262px;
+  height: 180px;
+  background: url(../images/step1.png) no-repeat scroll center 0;
+  background-size: 262px 180px;
+  margin: 0 auto;
+}
+
+.element .activity_2 {
+  width: 180px;
+  height: 180px;
+  background: url(../images/step2.png) no-repeat scroll center 0;
+  background-size: 180px 180px;
+  margin: 0 auto;
+}
+
+.element .activity_3 {
+  width: 180px;
+  height: 180px;
+  background: url(../images/step3.png) no-repeat scroll center 0;
+  background-size: 180px 180px;
+  margin: 0 auto;
 }
 
 .tips {
