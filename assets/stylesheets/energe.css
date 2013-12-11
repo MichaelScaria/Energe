@@ -2,6 +2,7 @@ body {
 	margin: 0;
 	padding:0;
 	background: rgb(247,247,247);
+  zoom: 85%;
 }
 
 @font-face {
@@ -16,7 +17,7 @@ body {
   src: url('../fonts/OpenSans-Light.woff'); /*URL to font*/
 }
 @font-face {
-  font-family: 'Open Sans';
+  font-family: 'Open Sans Bold';
   font-style: normal;
   font-weight: 600;
   src: url('../fonts/OpenSans-Semibold.woff'); /*URL to font*/
@@ -70,6 +71,7 @@ body {
 
 .content {
   z-index: 1;
+  overflow: hidden;
 }
 
 .steps {
@@ -79,9 +81,9 @@ body {
 .content .steps .title {
 /*     width: 44%;
 */    /*top, right, bottom, left*/
-    padding: 3% 0 0 0;
+    padding: 5% 0 0 0;
     color: black;
-    font-size: 38px;
+    font-size: 34px;
     font-family: 'Open Sans';
     text-align: center;
     margin-bottom: 35px;
@@ -97,9 +99,10 @@ body {
 }
 
 .circles {
-  margin-left:11%;
+  /*margin-left:11%;*/
+  margin: 30px auto 0;
   width: 100%;
-
+  display: block;
 }
 
 .circle {
@@ -112,10 +115,12 @@ body {
   /*-moz-border-radius: 999px;*/
   /*border-radius: 999px;*/
   /*behavior: url(PIE.htc);*/
-  display: inline-block;
-  margin-top: 18%;
+  /*display: inline-block;*/
+  /*margin-top: 18%;*/
   width: 180px;
   height: 180px;
+  display: block;
+float: left;
   
 }
 
@@ -141,13 +146,17 @@ body {
   /*margin-left: 12%;*/
   width: 100%;
   font-family: 'Open Sans';
-  text-align: center;;
+  text-align: center;
+  font-size: 20px;
+  display: block;
 
 }
 
 .instruction {
-  display: inline-block;
+  /*display: inline-block;*/
   width: 355px;
+  display: block;
+float: left;
 
 }
 .instructions .middle {
@@ -158,6 +167,7 @@ body {
 .tips {
   height: 650px;
   background-color: #27AE60; 
+  /*background-color: rgb(40, 40, 40);*/
   /*margin: 0;*/
   /*padding-top: 600px;*/
   background-position: 50% 225px;
