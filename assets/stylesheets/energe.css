@@ -61,13 +61,44 @@ body {
 .splash .title {
 /*	width: 44%;
 */	/*top, right, bottom, left*/
-  padding: 17% 0 0 0;
+  padding: 13% 0 0 0;
   color: rgb(249, 249, 249);
   font-size: 52px;
   font-family: 'Verlag Bold';
   width: 100%;
 	text-align: center;
 }
+
+.splash .link {
+  width: 100%;
+  text-align: center;
+}
+
+.splash .button {
+  font-family: 'Verlag Bold';
+  border-color: white;
+  /*background: none;*/
+  border: 1px solid #fff!important; 
+  text-decoration: none;
+  font-weight: 400;
+  display: inline-block;
+  padding: 30px 65px;
+  font-size: 1.5em;
+  letter-spacing: 0.20em;
+  -webkit-border-radius: 3px;
+  margin-top: 3%;
+}
+
+.splash a.button:visited {
+  color: #FFFFFF
+}
+
+.splash a.button::selection {
+  background: #060606;
+  color: #fff;
+}
+
+
 
 .content {
   z-index: 1;
@@ -99,7 +130,7 @@ body {
 }
 
 .elements {
-  max-width: 1000px;
+  max-width: 1400px;
   height: 250px;
   margin: 30px auto 0;
   display: block;
@@ -175,7 +206,7 @@ float: left;
   display: inline-block;
   float: left;
   height: 210px;
-  width: 27.99%;
+  width: 33.33%;
   transition: all 1.0s ease-in-out;
   
 }
@@ -206,6 +237,13 @@ float: left;
   background: url(../images/step3.png) no-repeat scroll center 0;
   background-size: 180px 180px;
   margin: 0 auto;
+}
+
+.element .text {
+  margin-top: 20px;
+  font-family: 'Open Sans';
+  text-align: center;
+  font-size: 20px;
 }
 
 .tips {
