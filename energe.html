@@ -2,11 +2,8 @@
 	<head>
 		<title>Energe</title>
 		<link href="assets/stylesheets/energe.css" rel="stylesheet" type="text/css">
-		<link href="http://fonts.googleapis.com/css?family=Merriweather:400,300,700" rel="stylesheet" type="text/css">
 		<script src="assets/javascript/energe.js"></script>
-		<script type="text/javascript" src="assets/javascript/skrollr.min.js"></script>
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-        
 	</head>
 	<body>
 		<div class="header">
@@ -20,7 +17,7 @@
 			<div class="title">
 				ENERGY EFFICIENT HOUSING. MADE EASY.	
 			</div>
-			<div class="link"><a class="button" href="#why">LEARN MORE</a></div>
+			<div class="link"><a class="geolocate" href="geolocate.html">LEARN MORE</a></div>
 		</div>
 		<div class="content">
 			<div class="steps">
@@ -67,16 +64,16 @@
       var scrollTop = $(window).scrollTop(), elementOffset = $('.steps').offset().top, distance = (elementOffset - scrollTop);
       var height = $(window).height();
 	  var scrollTop = $(window).scrollTop();
-      // console.log('body:' + $('.step1').parent().parent().height())
+      console.log('body:' + $('.elements').parent().height())
       //animate circles up/down as user scrolls towards/away from it
       if (distance <= 500) {
-        $('.circle').css('margin-top', .06 * $('.step1').parent().parent().height());
-        $('.instruction').css('margin-top', .06 * $('.step1').parent().parent().height());
+        $('.elements').css('margin-top', .0 * $('.elements').parent().height());
+        // $('.instruction').css('margin-top', .06 * $('.step1').parent().parent().height());
         // $('.image').css('background-color: red');
         // $('.image').css('margin-top', 1);
       }
       else {
-        $('.circle').css('margin-top', .18 * $('.step1').parent().parent().height());
+        $('.elements').css('margin-top', .09 * $('.elements').parent().parent().height());
       };
 
       //if steps is fully on screen, change logo background to black
