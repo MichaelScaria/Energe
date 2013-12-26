@@ -69,12 +69,12 @@ body {
 	text-align: center;
 }
 
-.splash .link {
+.user_prompt {
   width: 100%;
   text-align: center;
 }
 
-.splash .geolocate {
+.button {
   font-family: 'Verlag Bold';
   border-color: white;
   /*background: none;*/
@@ -87,14 +87,15 @@ body {
   letter-spacing: 0.20em;
   -webkit-border-radius: 3px;
   margin-top: 3%;
+  display: inline-block;
 }
 
-.splash a.geolocate:visited {
+a.button:visited {
   color: white;
   text-decoration: none;
 }
 
-.splash a.geolocate::selection {
+a.button::selection {
   background: #060606;
   color: #fff;
 }
@@ -270,3 +271,39 @@ float: left;
   width: 100%;
   text-align: center;
 }
+
+
+
+/***** GEOLOCATE PAGE *****/
+
+.geolocate_background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(35, 35, 35);
+  margin: 0;
+  padding: 0;
+}
+
+.geolocate_background .title {
+/*  width: 44%;
+*/  /*top, right, bottom, left*/
+  padding: 13% 0 0 0;
+  color: rgb(249, 249, 249);
+  font-size: 52px;
+  font-family: 'Verlag Bold';
+  width: 100%;
+  text-align: center;
+}
+
+.geolocate_background .user_prompt {
+  margin-top: 23%;
+  height: 100%;
+}
+
+.geolocate_background .button {
+  margin: 3% 15px 0 15px;
+  color: white;
+}
+
+

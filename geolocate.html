@@ -8,24 +8,43 @@
 	</head>
 	<body>
 		<div class="header">
-			<div class="background">
+			<a href='energe.html'>
 				<div class="logo">
 					<img src="assets/images/logo-2.png" width="215px" height="97px" class='image'>
 				</div>
-			</div>
+			</a>
 		</div>
-		<div class="splash">
-			<div class="title">LOCATION.</div>
+		<div class="geolocate_background">
+			<!-- <div class="title">LOCATION.</div> -->
+			<div class="user_prompt">
+				<div class="button current">CURRENT LOCATION</div>
+				<div class="button custom">ENTER LOCATION</div>
+			</div>
 		</div>
 	</body>
 </html>
 
 <script>
+
+$('body').on('click', '.button.current', function(args) {
+	// alert('current!');
+    // $(args.currentTarget).closest('.admin-bar').find('.admin-entry').not('.edit-button').not('.show-button').each(function(index, element) {
+    //   $(element).replaceWith('<input class="' + $(element).attr("class") + '" type="text" value="' + $(element).html() + '" placeholder="' + $(element).html() + '" data-name="' + $(element).data("name") + '">');
+    // })
+	$(args.currentTarget).closest('.geolocate_background').replaceWith('<div>');
+    // $(args.currentTarget).closest('.user_prompt').remove();
+    // $(args.currentTarget).replaceWith('<div class="admin-entry save-button">Save</div><div class="admin-entry cancel-button">Cancel</div>');
+  })
+
+$('body').on('click', '.button.custom', function(args) {
+	alert('custom!');
+  })
+
 $(document).ready( function() { 
-	$.getJSON('http://freegeoip.net/json/', function(location) {
-	  // console.log(location.zipcode);
-	  $('.title').text(location.city.toUpperCase() + ', ' + location.region_name.toUpperCase())
-	});
+	// $.getJSON('http://freegeoip.net/json/', function(location) {
+	//   // console.log(location.zipcode);
+	//   $('.title').text(location.city.toUpperCase() + ', ' + location.region_name.toUpperCase())
+	// });
 });
 
 // {
