@@ -3,8 +3,98 @@
 		<title>Energe</title>
 		<link href="assets/stylesheets/energe.css" rel="stylesheet" type="text/css">
 		<script src="assets/javascript/energe.js"></script>
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-        
+		<script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+		<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+        <script>
+			  $(function() {
+			    var availableTags = [
+			    "Albuquerque, New Mexico",
+			    "Anaheim, California", 
+			    "Arlington, Texas", 
+			    "Atlanta, Georgia", 
+			    "Aurora, Colorado", 
+			    "Austin, Texas", 
+			    "Bakersfield, California", 
+			    "Baltimore, Maryland", 
+			    "Baton Rouge, Louisiana", 
+			    "Birmingham, Alabama", 
+			    "Boise, Idaho", 
+			    "Boston, Massachusetts", 
+			    "Buffalo, New York", 
+			    "Charlotte, North Carolina", 
+			    "Chicago, Illinois", 
+			    "Cincinnati, Ohio", 
+			    "Cleveland, Ohio", 
+			    "Colorado Springs, Colorado", 
+			    "Columbus, Ohio", 
+			    "Corpus Christi, Texas", 
+			    "Dallas, Texas", 
+			    "Denver, Colorado", 
+			    "Detroit, Michigan", 
+			    "El Paso, Texas", 
+			    "Fort Worth, Texas", 
+			    "Fresno, California", 
+			    "Frisco, Texas", 
+			    "Garland, Texas", 
+			    "Greensboro, North Carolina", 
+			    "Henderson, Nevada", 
+			    "Houstan, Texas", 
+			    "Indianapolis, Indiana", 
+			    "Jacksonville, Florida", 
+			    "Kansas City, Missouri", 
+			    "Las Vegas, Nevada", 
+			    "Lincoln, Nebraska", 
+			    "Little Rock, Arkansas", 
+			    "Los Angeles, California", 
+			    "Louisville, Kentucky", 
+			    "Madison, Wisconsin", 
+			    "Memphis, Tennessee", 
+			    "Mesa, Arizona", 
+			    "Mesquite, Texas", 
+			    "Miami, Florida", 
+			    "Milwaukee, Wisconsin", 
+			    "Minneapolis, Minnesota", 
+			    "Montgomery, Alabama", 
+			    "Nashville, Tennessee", 
+			    "New Orleans, Louisiana", 
+			    "New York, New York", 
+			    "Newark, New Jersey", 
+			    "Oakland, California", 
+			    "Oklahoma City, Oklahoma", 
+			    "Omaha, Nebraska", 
+			    "Orlando, Florida", 
+			    "Philadelphia, Pennsylvania", 
+			    "Phoenix, Arizona", 
+			    "Plano, Texas", 
+			    "Portland, Oregon", 
+			    "Providence, Rhode Island", 
+			    "Raleigh, North Carolina", 
+			    "Reno, Nevada", 
+			    "Richmond, Virginia", 
+			    "Sacramento, California", 
+			    "Salt Lake City, Utah", 
+			    "San Antonio, Texas", 
+			    "San Diego, California", 
+			    "San Francisco, California", 
+			    "San Jose, California", 
+			    "Santa Ana, California", 
+			    "Seattle, Washington", 
+			    "St. Louis, Missouri", 
+			    "Stockton, California", 
+			    "Tampa, Florida", 
+			    "Toledo, Ohio", 
+			    "Tucson, Arizona", 
+			    "Tulsa, Oklahoma", 
+			    "Wichita, Kansas"]
+			    $( ".tags" ).autocomplete({
+			      source: availableTags,
+			      messages: {
+			        noResults: '',
+			        results: function() {}
+				    }
+			    });
+			  });
+  		</script>
 	</head>
 	<body>
 		<div class="header">
@@ -13,9 +103,14 @@
 					<img src="assets/images/logo-2.png" width="215px" height="97px" class='image'>
 				</div>
 			</a>
+<!-- 			<div class="ui-widget">
+			  <label for="tags"></label>
+			  <input class="tags" type="text" placeholder="Search City">
+			</div> -->
 		</div>
 		<div class="geolocate_background">
 			<!-- <div class="title">LOCATION.</div> -->
+			
 			<div class="user_prompt">
 				<div class="button current">CURRENT LOCATION</div>
 				<div class="button custom">ENTER LOCATION</div>
