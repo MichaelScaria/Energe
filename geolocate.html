@@ -96,17 +96,19 @@
 			  });
   		</script>
 	</head>
-	<body>
+	<body style ='background-color: rgb(35, 35, 35)'>
 		<div class="header">
-			<a href='energe.html'>
+			<!-- <a href='energe.html'> -->
 				<div class="logo">
-					<img src="assets/images/logo-2.png" width="215px" height="97px" class='image'>
+					<a href='energe.html'>
+						<img src="assets/images/logo-2.png" width="215px" height="97px" class='image'>
+					</a>
+					<!-- <div class="ui-widget">
+						<label for="tags"></label>
+				  	<input class="tags" type="text" placeholder="Search City">
+			  	</div> -->
 				</div>
-			</a>
-<!-- 			<div class="ui-widget">
-			  <label for="tags"></label>
-			  <input class="tags" type="text" placeholder="Search City">
-			</div> -->
+
 		</div>
 		<div class="geolocate_background">
 			<!-- <div class="title">LOCATION.</div> -->
@@ -126,21 +128,22 @@ $('body').on('click', '.button.current', function(args) {
     // $(args.currentTarget).closest('.admin-bar').find('.admin-entry').not('.edit-button').not('.show-button').each(function(index, element) {
     //   $(element).replaceWith('<input class="' + $(element).attr("class") + '" type="text" value="' + $(element).html() + '" placeholder="' + $(element).html() + '" data-name="' + $(element).data("name") + '">');
     // })
-	$(args.currentTarget).closest('.geolocate_background').replaceWith('<div>');
-    // $(args.currentTarget).closest('.user_prompt').remove();
-    // $(args.currentTarget).replaceWith('<div class="admin-entry save-button">Save</div><div class="admin-entry cancel-button">Cancel</div>');
-  })
+	$(args.currentTarget).closest('.geolocate_background').remove();
+	$('<div class="ui-widget"><label for="tags"></label><input class="tags" type="text" placeholder="Search City"></div>').appendTo($('.logo'))
+	$.getJSON('http://freegeoip.net/json/', function(location) {
+		 $(".tags").val(location.city.toUpperCase() + ', ' + location.region_name.toUpperCase())
+	});
+})
 
 $('body').on('click', '.button.custom', function(args) {
-	alert('custom!');
-  })
+	$(args.currentTarget).closest('.geolocate_background').remove();
+	$('<div class="ui-widget"><label for="tags"></label><input class="tags" type="text" placeholder="Search City"></div>').appendTo($('.logo'))
 
-$(document).ready( function() { 
-	// $.getJSON('http://freegeoip.net/json/', function(location) {
-	//   // console.log(location.zipcode);
-	//   $('.title').text(location.city.toUpperCase() + ', ' + location.region_name.toUpperCase())
-	// });
-});
+})
+
+// $(document).ready( function() { 
+	
+// });
 
 // {
 //    source: "smart-ip.net",
