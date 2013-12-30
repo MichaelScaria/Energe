@@ -96,7 +96,8 @@
 			  });
   		</script>
 	</head>
-	<body style ='background-color: rgb(35, 35, 35)'>
+<!-- TODO REMOVE COLOR -->
+	<body style ='background-color: rgb(135, 135, 35)'>
 		<div class="header">
 			<!-- <a href='energe.html'> -->
 				<div class="logo">
@@ -112,7 +113,6 @@
 		</div>
 		<div class="geolocate_background">
 			<!-- <div class="title">LOCATION.</div> -->
-			
 			<div class="user_prompt">
 				<div class="button current">CURRENT LOCATION</div>
 				<div class="button custom">ENTER LOCATION</div>
@@ -122,21 +122,38 @@
 </html>
 
 <script>
-
+$('<div class="location_image"></div>').appendTo($('.geolocate_background'))
+	//when current location is clicked, find the current location, and paste it into the input box and auto search
 	$('body').on('click', '.button.current', function(args) {
 		// alert('current!');
 	    // $(args.currentTarget).closest('.admin-bar').find('.admin-entry').not('.edit-button').not('.show-button').each(function(index, element) {
 	    //   $(element).replaceWith('<input class="' + $(element).attr("class") + '" type="text" value="' + $(element).html() + '" placeholder="' + $(element).html() + '" data-name="' + $(element).data("name") + '">');
 	    // })
-		$(args.currentTarget).closest('.geolocate_background').remove();
+		$(args.currentTarget).closest('.user_prompt').remove();
 		$('<div class="ui-widget"><label for="tags"></label><input class="tags" type="text" placeholder="Search City"></div>').appendTo($('.logo'))
 		$.getJSON('http://freegeoip.net/json/', function(location) {
-			 $(".tags").val(location.city.toUpperCase() + ', ' + location.region_name.toUpperCase())
+			//if ip address is trackable
+			if (location.city && location.region_name) {
+			 	$(".tags").val(location.city.toUpperCase() + ', ' + location.region_name.toUpperCase())
+			 	$.ajax({
+	        url: "http://michaelscaria.herokuapp.com/location?state=texas&city=dallas",
+
+	        success: function( data ) {
+	          console.log('DATA: ' + data.image_url)
+	          // $('.geolocate_background').css('background-image' ,'url(' +data.image_url+ ');')
+	          // $('<div class="location_image" style="background-image: url(' +data.image_url+ ')"></div>').appendTo($('.geolocate_background'))
+	          // var background_image = 'url("https://s3-us-west-1.amazonaws.com/michaelscaria/location/texas/Dallas.png");'
+	          $('<div class="location_image" style="background-image: url("https://s3-us-west-1.amazonaws.com/michaelscaria/location/texas/Dallas.png"); height: 500px;"></div>').appendTo($('.geolocate_background'))
+	        }
+		      
+		    });
+			};
 		});
 	})
 
+
 	$('body').on('click', '.button.custom', function(args) {
-		$(args.currentTarget).closest('.geolocate_background').remove();
+		$(args.currentTarget).closest('.user_prompt').remove();
 		$('<div class="ui-widget"><label for="tags"></label><input class="tags" type="text" placeholder="Search City"></div>').appendTo($('.logo'))
 
 	})
