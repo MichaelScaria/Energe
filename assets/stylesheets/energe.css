@@ -270,5 +270,11 @@ a.button::selection {
   z-index: 5;
 }
 
+.location_image {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+}
+
 
 

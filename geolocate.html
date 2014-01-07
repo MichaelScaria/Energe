@@ -122,13 +122,20 @@
 </html>
 
 <script>
-$('<div class="location_image"></div>').appendTo($('.geolocate_background'))
+  var locationInfo;
+	$(document).ready( function() { 
+		$.ajax({
+		  url: "assets/data/locations.json",
+		  success: function( data ) {
+		  	locationInfo = JSON.parse(data);
+		  }
+		});
+	});
+
+
+
 	//when current location is clicked, find the current location, and paste it into the input box and auto search
 	$('body').on('click', '.button.current', function(args) {
-		// alert('current!');
-	    // $(args.currentTarget).closest('.admin-bar').find('.admin-entry').not('.edit-button').not('.show-button').each(function(index, element) {
-	    //   $(element).replaceWith('<input class="' + $(element).attr("class") + '" type="text" value="' + $(element).html() + '" placeholder="' + $(element).html() + '" data-name="' + $(element).data("name") + '">');
-	    // })
 		$(args.currentTarget).closest('.user_prompt').remove();
 		$('<div class="ui-widget"><label for="tags"></label><input class="tags" type="text" placeholder="Search City"></div>').appendTo($('.logo'))
 		$.getJSON('http://freegeoip.net/json/', function(location) {
@@ -136,16 +143,15 @@ $('<div class="location_image"></div>').appendTo($('.geolocate_background'))
 			if (location.city && location.region_name) {
 			 	$(".tags").val(location.city.toUpperCase() + ', ' + location.region_name.toUpperCase())
 			 	$.ajax({
-	        url: "http://michaelscaria.herokuapp.com/location?state=texas&city=dallas",
-
+	        url: "http://michaelscaria.herokuapp.com/location?state=" +location.region_name.toLowerCase()+ "&city="+location.city.toLowerCase(),
 	        success: function( data ) {
-	          console.log('DATA: ' + data.image_url)
-	          // $('.geolocate_background').css('background-image' ,'url(' +data.image_url+ ');')
-	          // $('<div class="location_image" style="background-image: url(' +data.image_url+ ')"></div>').appendTo($('.geolocate_background'))
-	          // var background_image = 'url("https://s3-us-west-1.amazonaws.com/michaelscaria/location/texas/Dallas.png");'
-	          $('<div class="location_image" style="background-image: url("https://s3-us-west-1.amazonaws.com/michaelscaria/location/texas/Dallas.png"); height: 500px;"></div>').appendTo($('.geolocate_background'))
+	          //https://s3-us-west-1.amazonaws.com/michaelscaria/location/texas/Dallas.png
+	          console.log(data['image_url'])
+	          $('.geolocate_background').replaceWith('<div class="location_image" style="background-image: url(\'' +data['image_url']+'\');"></div>');
+	          var state = location.region_name.toLowerCase(); var city = location.city.toLowerCase();
+	          
+	          console.log(locationInfo[location.region_name.toLowerCase()][location.city.toLowerCase()]);
 	        }
-		      
 		    });
 			};
 		});
@@ -158,9 +164,6 @@ $('<div class="location_image"></div>').appendTo($('.geolocate_background'))
 
 	})
 
-	// $(document).ready( function() { 
-		
-	// });
 
 	// {
 	//    source: "smart-ip.net",
