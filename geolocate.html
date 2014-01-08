@@ -38,7 +38,7 @@
 			    "Garland, Texas", 
 			    "Greensboro, North Carolina", 
 			    "Henderson, Nevada", 
-			    "Houstan, Texas", 
+			    "Houston, Texas", 
 			    "Indianapolis, Indiana", 
 			    "Jacksonville, Florida", 
 			    "Kansas City, Missouri", 
@@ -96,17 +96,16 @@
 			  });
   		</script>
 	</head>
-<!-- TODO REMOVE COLOR -->
 	<body style ='background-color: rgb(35, 35, 35)'>
-		<!-- <div class="header"> -->
-			<!-- <a href='energe.html'> -->
+		<div class="header">
 				<div class="logo">
 					<a href='energe.html'>
 						<img src="assets/images/logo-2.png" width="215px" height="97px" class='image'>
 					</a>
 					<div class="ui-widget">
 						<label for="tags"></label>
-				  	<input class="tags" type="text" placeholder="Search City">
+						<!-- TODO disabled -->
+				  	<input class="tags" type="text" placeholder="Search City" >
 			  	</div>
 				</div>
 
@@ -137,7 +136,7 @@
 	//when current location is clicked, find the current location, and paste it into the input box and auto search
 	$('body').on('click', '.button.current', function(args) {
 		$(args.currentTarget).closest('.user_prompt').remove();
-		$('<div class="ui-widget"><label for="tags"></label><input class="tags" type="text" placeholder="Search City"></div>').appendTo($('.logo'))
+		$(".tags").prop('disabled', false);
 		$.getJSON('http://freegeoip.net/json/', function(location) {
 			//if ip address is trackable
 			if (location.city && location.region_name) {
@@ -157,7 +156,6 @@
 	          console.log(locationInfo[location.region_name.toLowerCase()][location.city.toLowerCase()]);
 	          // var facts = locationInfo[location.region_name.toLowerCase()][location.city.toLowerCase()];
 	          var facts = locationInfo[location.region_name.toLowerCase()]['dallas'];
-	          console.log(facts.length)
 	          var factsDiv = '<div class="facts">'
 	          for (var i = 0; i < facts.length; i++) {
 	          	console.log(facts[i])
@@ -175,8 +173,7 @@
 
 	$('body').on('click', '.button.custom', function(args) {
 		$(args.currentTarget).closest('.user_prompt').remove();
-		// $('.logo').css('height: 500px');
-		// $('<div class="ui-widget"><label for="tags"></label><input class="tags" type="text" placeholder="Search City"></div>').appendTo($('.logo'))
+		$(".tags").prop('disabled', false);
 
 	})
 

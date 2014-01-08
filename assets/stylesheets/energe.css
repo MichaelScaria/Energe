@@ -24,6 +24,9 @@ body {
   src: url('../fonts/OpenSans-Semibold.woff'); /*URL to font*/
 }
 
+li {list-style-type: none;}
+
+
 .header {
 	/*background-image: linear-gradient(-180deg,#39bf9f 0, #02906e 100%);*/
 	/*-webkit-box-shadow: rgba(0,0,0,0.15) 0 3px 4px 0,rgba(0,0,0,0.15) 0 -1px 0 0 inset;*/
@@ -31,7 +34,7 @@ body {
 	position: fixed;
 	width: 100%;
 	top: 0;
-	z-index: 2;
+	z-index: 8;
 	left: 0;
   margin-top: 0%;
 }
@@ -293,6 +296,27 @@ a.button::selection {
 
 .fact {
   margin-bottom: 1%;
+}
+
+.ui-autocomplete.ui-front.ui-menu.ui-widget.ui-widget-content.ui-corner-all {
+  left: 0;
+}
+
+.ul#ui-id-1.ui-autocomplete.ui-front.ui-menu.ui-widget.ui-widget-content.ui-corner-all {
+  left: 0;
+}
+
+/*ui-autocomplete*/
+.ui-menu-item {
+  background-color: red;
+  padding:0; margin:0;
+  left: 0;
+}
+.ui-corner-all {
+  font-family: 'Open Sans';
+  color: white;
+  text-decoration: none;
+  padding-top: 10px;
 }
 
 
