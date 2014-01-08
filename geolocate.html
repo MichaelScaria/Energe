@@ -97,17 +97,17 @@
   		</script>
 	</head>
 <!-- TODO REMOVE COLOR -->
-	<body style ='background-color: rgb(135, 135, 35)'>
-		<div class="header">
+	<body style ='background-color: rgb(35, 35, 35)'>
+		<!-- <div class="header"> -->
 			<!-- <a href='energe.html'> -->
 				<div class="logo">
 					<a href='energe.html'>
 						<img src="assets/images/logo-2.png" width="215px" height="97px" class='image'>
 					</a>
-					<!-- <div class="ui-widget">
+					<div class="ui-widget">
 						<label for="tags"></label>
 				  	<input class="tags" type="text" placeholder="Search City">
-			  	</div> -->
+			  	</div>
 				</div>
 
 		</div>
@@ -175,8 +175,8 @@
 
 	$('body').on('click', '.button.custom', function(args) {
 		$(args.currentTarget).closest('.user_prompt').remove();
-		$('.logo').css('height: 500px');
-		$('<div class="ui-widget"><label for="tags"></label><input class="tags" type="text" placeholder="Search City"></div>').appendTo($('.logo'))
+		// $('.logo').css('height: 500px');
+		// $('<div class="ui-widget"><label for="tags"></label><input class="tags" type="text" placeholder="Search City"></div>').appendTo($('.logo'))
 
 	})
 
