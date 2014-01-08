@@ -175,6 +175,7 @@
 
 	$('body').on('click', '.button.custom', function(args) {
 		$(args.currentTarget).closest('.user_prompt').remove();
+		$('.logo').css('height: 500px');
 		$('<div class="ui-widget"><label for="tags"></label><input class="tags" type="text" placeholder="Search City"></div>').appendTo($('.logo'))
 
 	})
