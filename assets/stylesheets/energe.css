@@ -3,6 +3,7 @@ body {
 	padding:0;
 	background: rgb(247,247,247);
   zoom: 85%;
+  background: url('') 50% 0 no-repeat fixed;
 }
 
 @font-face {
@@ -263,7 +264,6 @@ a.button::selection {
 }
 
 .tags:focus {
-    
   /*background-image:  url("../images/icon.png");*/
   background-repeat: no-repeat;
   background-position: 98%;
@@ -271,9 +271,27 @@ a.button::selection {
 }
 
 .location_image {
-  position: fixed;
   width: 100%;
+  top: 0;
+  bottom:0;
+  position:fixed;
+  overflow-y:scroll;
+  overflow-x:hidden;
+}
+
+.facts {
+  color: rgb(249, 249, 249);
+  font-size: 52px;
+  font-family: 'Verlag Bold';
+  margin: 10% 0 0 20%;
+  /*margin-left: 15%;*/
+  width: 90%;
   height: 100%;
+  /*text-align:center;*/
+}
+
+.fact {
+  margin-bottom: 1%;
 }
 
 

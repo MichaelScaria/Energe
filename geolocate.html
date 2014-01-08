@@ -143,14 +143,29 @@
 			if (location.city && location.region_name) {
 			 	$(".tags").val(location.city.toUpperCase() + ', ' + location.region_name.toUpperCase())
 			 	$.ajax({
-	        url: "http://michaelscaria.herokuapp.com/location?state=" +location.region_name.toLowerCase()+ "&city="+location.city.toLowerCase(),
+	        url: "http://michaelscaria.herokuapp.com/location?state=" +location.region_name.toLowerCase()+ "&city="+"dallas",
+	        // url: "http://michaelscaria.herokuapp.com/location?state=" +location.region_name.toLowerCase()+ "&city="+location.city.toLowerCase(),
 	        success: function( data ) {
 	          //https://s3-us-west-1.amazonaws.com/michaelscaria/location/texas/Dallas.png
 	          console.log(data['image_url'])
-	          $('.geolocate_background').replaceWith('<div class="location_image" style="background-image: url(\'' +data['image_url']+'\');"></div>');
+	          $('.geolocate_background').replaceWith('<a href="http://www.google.com"><div class="location_image" style="background-image: url(\'' +data['image_url']+'\');"></div></a>');
+	          // $('.body').css("background-image: url(\'' +data['image_url']+'\');")
+	          // $('.geolocate_background').replaceWith('<div class="location_image"></div>');
+
 	          var state = location.region_name.toLowerCase(); var city = location.city.toLowerCase();
 	          
 	          console.log(locationInfo[location.region_name.toLowerCase()][location.city.toLowerCase()]);
+	          // var facts = locationInfo[location.region_name.toLowerCase()][location.city.toLowerCase()];
+	          var facts = locationInfo[location.region_name.toLowerCase()]['dallas'];
+	          console.log(facts.length)
+	          var factsDiv = '<div class="facts">'
+	          for (var i = 0; i < facts.length; i++) {
+	          	console.log(facts[i])
+	          	factsDiv = factsDiv +'<div class="fact">' +facts[i].toUpperCase()+ '</div>';
+	          };
+	          factsDiv = factsDiv + '</div>';
+	          $('.location_image').append(factsDiv);
+
 	        }
 		    });
 			};
