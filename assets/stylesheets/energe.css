@@ -24,7 +24,13 @@ body {
   src: url('../fonts/OpenSans-Semibold.woff'); /*URL to font*/
 }
 
-li {list-style-type: none;}
+li {
+  list-style-type: none;
+}
+
+ul {
+  padding: 0;
+}
 
 
 .header {
@@ -106,8 +112,6 @@ a.button::selection {
   color: #fff;
 }
 
-
-
 .content {
   z-index: 1;
   overflow: hidden;
@@ -128,7 +132,6 @@ a.button::selection {
 }
 
 .border {
-
   display: block;
   width: 60%;
   height: 1px;
@@ -258,7 +261,7 @@ a.button::selection {
   font-family: 'Open Sans';
   font-size: 15px;
   color: white;
-  width: 100%;
+  width: 70%;
   background-color: transparent;
   margin-top:20px;
   border: 1px solid white;
@@ -298,25 +301,34 @@ a.button::selection {
   margin-bottom: 1%;
 }
 
-.ui-autocomplete.ui-front.ui-menu.ui-widget.ui-widget-content.ui-corner-all {
-  left: 0;
-}
-
-.ul#ui-id-1.ui-autocomplete.ui-front.ui-menu.ui-widget.ui-widget-content.ui-corner-all {
-  left: 0;
-}
-
 /*ui-autocomplete*/
 .ui-menu-item {
-  background-color: red;
+  background-color: rgb(245, 245, 245);
   padding:0; margin:0;
   left: 0;
 }
 .ui-corner-all {
   font-family: 'Open Sans';
-  color: white;
+  color: rgb(35, 35, 35);
   text-decoration: none;
   padding-top: 10px;
+}
+
+.logo .search {
+  color: #fff;
+  font-family: 'Open Sans';
+  border-color: white;
+  background: none;
+  border: 1px solid #fff!important; 
+  text-decoration: none;
+  font-weight: 400;
+  display: inline-block;
+  padding: 9px 7px;
+  font-size: .6em;
+  letter-spacing: 0.20em;
+  -webkit-border-radius: 3px;
+  margin-top: 3%;
+  display: inline-block;
 }
 
 
