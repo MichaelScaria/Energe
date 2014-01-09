@@ -63,6 +63,12 @@ ul {
    /*margin: 0 auto;*/
 }
 
+.subtitle {
+  font-family: 'Verlag Bold';
+  border-color: white;
+
+}
+
 .splash {
   height: 650px;
   background: url(../images/bkg-6.png) 50% 0 no-repeat fixed;
