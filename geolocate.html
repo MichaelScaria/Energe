@@ -5,27 +5,26 @@
 		<script src="assets/javascript/energe.js"></script>
 		<script src="http://code.jquery.com/jquery-1.10.2.js"></script>
 		<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
-        <script>
-			  
-  		</script>
 	</head>
 	<body style ='background-color: rgb(35, 35, 35)'>
-		<div class="header">
-				<div class="logo">
-					<a href='energe.html'>
-						<img src="assets/images/logo-2.png" width="215px" height="97px" class='image'>
-					</a>
-					<div class="ui-widget">
-						<label for="tags"></label>
-						<!-- TODO disabled -->
-				  	<input class="tags" type="text" placeholder="Search City" >
-				  	<input class="search" type="submit" value="Submit">
-				  	<!-- <div class="button">SEARCH</div> -->
-			  	</div>
-
-				</div>
-
-		</div>
+    <div class="header">
+      <a href='/'>
+        <img src="assets/images/logo-2.png" width="215px" height="97px" class='logo'>
+      </a>
+      <a href="/geolocate">
+        <div class="subtitle" style="height:27px;">GEOLOCATE</div>
+      </a>
+      <a href="/about">
+        <div class="subtitle" style="height:27px;">ABOUT</div>
+      </a>
+			<div class="ui-widget">
+				<label for="tags"></label>
+				<!-- TODO disabled -->
+				<input class="tags" type="text" placeholder="Search City" >
+				<input class="search" type="submit" value="Submit">
+				<!-- <div class="button">SEARCH</div> -->
+			</div>
+    </div>
 		<div class="geolocate_background">
 			<!-- <div class="title">LOCATION.</div> -->
 			<div class="user_prompt">
@@ -123,10 +122,10 @@
 	      noResults: '',
 	      results: function() {}
 	    }
-	  }); 
+	  });
 
   var locationInfo;
-	$(document).ready( function() { 
+	$(document).ready( function() {
 		$.ajax({
 		  url: "assets/data/locations.json",
 		  success: function( data ) {
@@ -164,7 +163,7 @@
 			var city = components[0];
 			var state = components[1];
 			search(city, state);
-			
+
 		}
 		else {
 			alert('Your query doesn\'t match our "city, state" format');
@@ -175,7 +174,7 @@
 	function search(city, state) {
 		// var t = '';
 		// for (var i = 0; i < locations.length; i++) {
-		// 	var components = locations[i].toUpperCase().split(', '); 
+		// 	var components = locations[i].toUpperCase().split(', ');
 
 		// 	t = t + '"' + components[0].toUpperCase() + ', ' + components[1].toUpperCase() +'",\n';
 		// };
