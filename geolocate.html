@@ -131,7 +131,7 @@
 		  success: function( data ) {
 		  	console.log(data)
 		  	if (!data) { console.log('no json')};
-		  	locationInfo = JSON.parse(data);
+		  	locationInfo = data;
 		  }
 		});
 	});
