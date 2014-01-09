@@ -129,7 +129,7 @@
 		$.ajax({
 		  url: "assets/data/locations.json",
 		  success: function( data ) {
-		  	if (!data) { alert('no json')};
+		  	if (!data) { console.log('no json')};
 		  	locationInfo = JSON.parse(data);
 		  }
 		});
