@@ -21,23 +21,13 @@
     <div class="splash">
       <div class="title">ENERGY EFFICIENT HOUSING. MADE EASY.</div>
       <div class="user_prompt">
-        <a class="button" href="/geolocate">GEOLOCATE</a>
+        <a class="button" href="/geolocate.html">GEOLOCATE</a>
       </div>
     </div>
     <div class="content">
       <div class="steps">
         <div class="title">Creating an energy efficient house has never been easier.</div>
         <span class="border"></span>
-        <!-- <div class="circles">
-          <div class="circle step1"></div>
-          <div class="circle step2"></div>
-          <div class="circle step3"></div>
-        </div>
-        <div class="instructions">
-          <div class="instruction">Pick an area that suits your needs using our tech.</div>
-          <div class="instruction middle">Select a house that best fits your lifestyle.</div>
-          <div class="instruction">Follow proper energy conservation techniques.</div>
-        </div> -->
         <div class="elements">
           <div class="element">
             <div class="activity_1"></div>
@@ -59,30 +49,3 @@
     </div>
   </body>
 </html>
-
-<script>
-  $(window).on('scroll', function () {
-    var scrollTop = $(window).scrollTop(), elementOffset = $('.steps').offset().top, distance = (elementOffset - scrollTop);
-    var height = $(window).height();
-    var scrollTop = $(window).scrollTop();
-    console.log('body:' + $('.elements').parent().height())
-    //animate circles up/down as user scrolls towards/away from it
-    if (distance <= 500) {
-      $('.elements').css('margin-top', .0 * $('.elements').parent().height());
-      // $('.instruction').css('margin-top', .06 * $('.step1').parent().parent().height());
-      // $('.image').css('background-color: red');
-      // $('.image').css('margin-top', 1);
-    }
-    else {
-      $('.elements').css('margin-top', .09 * $('.elements').parent().parent().height());
-    };
-
-    //if steps is fully on screen, change logo background to black
-    if (distance > 0) {
-      $('.circle').css('background-color: red');
-    }
-  });
-
-  var counter = 0;
-
-</script>
