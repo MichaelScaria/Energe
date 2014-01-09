@@ -1,7 +1,7 @@
 body {
-	margin: 0;
-	padding:0;
-	background: rgb(247,247,247);
+  margin: 0;
+  padding:0;
+  background: rgb(247,247,247);
   zoom: 85%;
   background: url('') 50% 0 no-repeat fixed;
 }
@@ -34,14 +34,14 @@ ul {
 
 
 .header {
-	/*background-image: linear-gradient(-180deg,#39bf9f 0, #02906e 100%);*/
-	/*-webkit-box-shadow: rgba(0,0,0,0.15) 0 3px 4px 0,rgba(0,0,0,0.15) 0 -1px 0 0 inset;*/
-	height: 120px;
-	position: fixed;
-	width: 100%;
-	top: 0;
-	z-index: 8;
-	left: 0;
+  /*background-image: linear-gradient(-180deg,#39bf9f 0, #02906e 100%);*/
+  /*-webkit-box-shadow: rgba(0,0,0,0.15) 0 3px 4px 0,rgba(0,0,0,0.15) 0 -1px 0 0 inset;*/
+  height: 120px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 8;
+  left: 0;
   margin-top: 0%;
 }
 
@@ -56,17 +56,27 @@ ul {
 }*/
 
 .logo {
-	 /*width: 234px;*/
+   /*width: 234px;*/
    padding: 0 0 0 4%;
    margin-top: 0%;
-   height: 100%
+   height: 100%;
    /*margin: 0 auto;*/
+}
+
+.logo a {
+  text-decoration: none;
+}
+
+.logo img {
+  display: inline-block;
+  vertical-align: middle;
 }
 
 .subtitle {
   font-family: 'Verlag Bold';
   border-color: white;
-
+  display: inline-block;
+  vertical-align: middle;
 }
 
 .splash {
@@ -77,14 +87,14 @@ ul {
 }
 
 .splash .title {
-/*	width: 44%;
-*/	/*top, right, bottom, left*/
+/*  width: 44%;
+*/  /*top, right, bottom, left*/
   padding: 13% 0 0 0;
   color: rgb(249, 249, 249);
   font-size: 52px;
   font-family: 'Verlag Bold';
   width: 100%;
-	text-align: center;
+  text-align: center;
 }
 
 .user_prompt {
@@ -96,7 +106,7 @@ ul {
   font-family: 'Verlag Bold';
   border-color: white;
   /*background: none;*/
-  border: 1px solid #fff!important; 
+  border: 1px solid #fff!important;
   text-decoration: none;
   font-weight: 400;
   display: inline-block;
@@ -146,10 +156,10 @@ a.button::selection {
 }
 
 .elements {
-  -webkit-transition: all 1.0s ease-in-out;  
-  -moz-transition: all 1.0s ease-in-out;  
-  -o-transition: all 1.0s ease-in-out;  
-  -ms-transition: all 1.0s ease-in-out;  
+  -webkit-transition: all 1.0s ease-in-out;
+  -moz-transition: all 1.0s ease-in-out;
+  -o-transition: all 1.0s ease-in-out;
+  -ms-transition: all 1.0s ease-in-out;
   transition: all 1.0s ease-in-out;
   max-width: 1400px;
   height: 250px;
@@ -163,7 +173,7 @@ a.button::selection {
   height: 210px;
   width: 33.33%;
   transition: all 1.0s ease-in-out;
-  
+
 }
 
 .element.middle{
@@ -203,7 +213,7 @@ a.button::selection {
 
 .tips {
   height: 650px;
-  background-color: #27AE60; 
+  background-color: #27AE60;
   /*background-color: rgb(40, 40, 40);*/
   /*margin: 0;*/
   /*padding-top: 600px;*/
@@ -325,7 +335,7 @@ a.button::selection {
   font-family: 'Open Sans';
   border-color: white;
   background: none;
-  border: 1px solid #fff!important; 
+  border: 1px solid #fff!important;
   text-decoration: none;
   font-weight: 400;
   display: inline-block;
@@ -335,6 +345,3 @@ a.button::selection {
   -webkit-border-radius: 3px;
   display: inline-block;
 }
-
-
-
