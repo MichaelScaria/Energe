@@ -124,15 +124,15 @@
 	    }
 	  });
 
+	var mappingInfo;
+	$.get('assets/data/mapping.json', function(data) {    
+	    mappingInfo = JSON.parse(data);
+	});
+
   var locationInfo;
-	$(document).ready( function() {
-		$.ajax({
-		  url: "assets/data/locations.json",
-		  success: function( data ) {
-		  	if (!data) { console.log('no json')};
-		  	locationInfo = data;
-		  }
-		});
+	$.get('assets/data/locations.json', function(data) {    
+	    locationInfo = data;
+	    console.log(locationInfo["great plains"]);
 	});
 
 
@@ -153,19 +153,15 @@
 	$('body').on('click', '.button.custom', function(args) {
 		$(args.currentTarget).closest('.user_prompt').remove();
 		$(".tags").prop('disabled', false);
-
 	})
 
 
 	$('body').on('click', '.search', function(args) {
 		var query = $('.tags').val();
-
 		if (query.split(', ').length > 1) {
 			var components = query.split(', ');
-			var city = components[0];
-			var state = components[1];
+			var city = components[0]; var state = components[1];
 			search(city, state);
-
 		}
 		else {
 			alert('Your query doesn\'t match our "city, state" format');
@@ -174,35 +170,27 @@
 	})
 
 	function search(city, state) {
-		// var t = '';
-		// for (var i = 0; i < locations.length; i++) {
-		// 	var components = locations[i].toUpperCase().split(', ');
-
-		// 	t = t + '"' + components[0].toUpperCase() + ', ' + components[1].toUpperCase() +'",\n';
-		// };
-		// console.log(t);
-
 		if (jQuery.inArray(city.toUpperCase() + ', ' + state.toUpperCase(), locations) == -1) {
 			alert('City not found in our database, please try another location.');
 			return;
 		}
 		$(".tags").val(city.toUpperCase() + ', ' + state.toUpperCase())
+		var region = mappingInfo[state.toLowerCase()];
+
+
 	 	$.ajax({
       url: "http://michaelscaria.herokuapp.com/location?state=" +state.toLowerCase()+ "&city="+"dallas",
-      // url: "http://michaelscaria.herokuapp.com/location?state=" +location.region_name.toLowerCase()+ "&city="+location.city.toLowerCase(),
       success: function( data ) {
         //https://s3-us-west-1.amazonaws.com/michaelscaria/location/texas/Dallas.png
-        console.log(data['image_url'])
+        // console.log(data['image_url'])
         $('.geolocate_background').replaceWith('<a href="http://www.google.com"><div class="location_image" style="background-image: url(\'' +data['image_url']+'\');"></div></a>');
-        // $('.body').css("background-image: url(\'' +data['image_url']+'\');")
-        // $('.geolocate_background').replaceWith('<div class="location_image"></div>');
 
-        console.log(locationInfo[state.toLowerCase()][city.toLowerCase()]);
+        // console.log(locationInfo[state.toLowerCase()][city.toLowerCase()]);
         // var facts = locationInfo[location.region_name.toLowerCase()][location.city.toLowerCase()];
         var facts = locationInfo[state.toLowerCase()]['dallas'];
         var factsDiv = '<div class="facts">'
         for (var i = 0; i < facts.length; i++) {
-        	console.log(facts[i])
+        	// console.log(facts[i])
         	factsDiv = factsDiv +'<div class="fact">' +facts[i].toUpperCase()+ '</div>';
         };
         factsDiv = factsDiv + '</div>';
