@@ -131,7 +131,7 @@
 
   var locationInfo;
 	$.get('assets/data/locations.json', function(data) {    
-	    locationInfo = data;
+	    locationInfo = JSON.parse(data);
 	    console.log(locationInfo["great plains"]);
 	});
 

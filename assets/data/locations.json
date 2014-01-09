@@ -1,5 +1,6 @@
 {
-  "great plains" : {"common_text": 
+  "great plains" : {
+                    "common_text": 
                       ["southern portions have about 70-100 days per year over 90 degrees fahrenheit", 
                       "northern portions have 10-20 days over 90 degrees fahrenheit", 
                       "bitter, cold and snowy winters", "west is semi-arid", "east is considerably wetter", 
@@ -10,42 +11,60 @@
                       "10% of the land is protected for wildlife habitat"],
 
                     "texas": 
-                      {"info" :   ["set your thermostat to a temperature that is comfortable but not too high or low.", 
-                                  "close exterior doors and windows tight while the air conditioning is on", 
-                                  "set your thermostat to auto so the air conditioner is not running constantly", 
-                                  "clean air conditioner filters regularly", "when you're asleep, turn your thermostat back 10-15 degrees"],
+                      {
+                        "info" :   ["set your thermostat to a temperature that is comfortable but not too high or low.", 
+                                    "close exterior doors and windows tight while the air conditioning is on", 
+                                    "set your thermostat to auto so the air conditioner is not running constantly", 
+                                    "clean air conditioner filters regularly", "when you're asleep, turn your thermostat back 10-15 degrees"],
 
-                      "dallas":   ["1.241 million in population", "average listing price for a home is $582,318", 
-                                  "the high in july is 96 degrees", "the low in january is 35 degrees",
-                                  "36 inches of rain per year", "2 inches of snow per year"],
+                        "default_image" : "http://imgur.com/02CspfN",
+                        "default_link" : "https://www.dropbox.com/sh/ygwbtqzqwg74x52/Pd1QtxlXAz/Dallas%20Skyline.jpg",
 
-                      "frisco":   ["128,176 in population", "average listing price for a home is $473,253", 
-                                  "the high in july is 96 degrees", "the low in january is 33 degrees", 
-                                  "39 inches of rain per year", "3 inches of snow per year"],
+                        "dallas":   {
+                                      "info" : ["1.241 million in population", "average listing price for a home is $582,318", 
+                                               "the high in july is 96 degrees", "the low in january is 35 degrees",
+                                               "36 inches of rain per year", "2 inches of snow per year"],
+                                      "image_url": "http://imgur.com/02CspfN",
+                                      "link": "https://www.dropbox.com/sh/ygwbtqzqwg74x52/Pd1QtxlXAz/Dallas%20Skyline.jpg"
+                                    },
 
-                      "allen" :   ["84,246 in population", "average listing price for a home is $442,102", 
-                                  "the high in july is 96 degrees", "the low in july is 33 degrees", 
-                                  "38 inches of rain per year", "3 inches of snow per year"],
+                        "frisco":   {
+                                      "info" : ["128,176 in population", "average listing price for a home is $473,253", 
+                                                "the high in july is 96 degrees", "the low in january is 33 degrees", 
+                                                "39 inches of rain per year", "3 inches of snow per year"]
+                                    },
 
-                      "mesquite": ["143,195 in population", "average listing price for a home is $117,389", 
-                                  "the high in july is 96 degrees", "the low in july is 35",
-                                  "36 inches of rain per year", "2 inches of snow per year"],
 
-                      "houston":  ["2.161 million in population", "average listing price for a home is $331,342",
-                                  "the high in july is 93 degrees", "the low in january is 46 degrees", 
-                                  "51 inches of rain per year", "0 inches of snow per year"]
+                        "allen" :   {
+                                      "info" : ["84,246 in population", "average listing price for a home is $442,102", 
+                                                "the high in july is 96 degrees", "the low in july is 33 degrees", 
+                                                "38 inches of rain per year", "3 inches of snow per year"]
+                                    },
+
+
+                        "mesquite": {
+                                      "info" : ["143,195 in population", "average listing price for a home is $117,389", 
+                                                "the high in july is 96 degrees", "the low in july is 35",
+                                                "36 inches of rain per year", "2 inches of snow per year"]
+                                    },
+
+                        "houston":  {
+                                      "info" : ["2.161 million in population", "average listing price for a home is $331,342",
+                                                "the high in july is 93 degrees", "the low in january is 46 degrees", 
+                                                "51 inches of rain per year", "0 inches of snow per year"]
+                                    }
                       }
                     },
 
-  "midwest" :       {"common_text": 
-                      ["66 million americans", "flat prairie farmed for corn, soybean, wheat, and livestock grazing", 
-                      "hot, humid summers and cold winters", "july 12-16, 1995 heat wave with over 700 heat-related deaths",
-                      "a lot of ticks and mosquitoes", "poor air quality", 
-                      "intense precipitation which means flood damage and travel delays",
-                      "the great lakes are part of the geography and contain 78% of north america's freshwater"]
-                    },
+    "midwest" :       {"common_text": 
+                        ["66 million americans", "flat prairie farmed for corn, soybean, wheat, and livestock grazing", 
+                        "hot, humid summers and cold winters", "july 12-16, 1995 heat wave with over 700 heat-related deaths",
+                        "a lot of ticks and mosquitoes", "poor air quality", 
+                        "intense precipitation which means flood damage and travel delays",
+                        "the great lakes are part of the geography and contain 78% of north america's freshwater"]
+                      },
 
-   "northeast" :    {"common_text": ["dense cities and sparsely popluated towns",
+    "northeast" :    {"common_text": ["dense cities and sparsely popluated towns",
                       "portions of west virginia and the southern-most state experience more than 20 days per year of 90 degree temps",
                       "northern areas of maine experience only one day per year abover 90 degrees",
                       "majority of winter precipitation falls as rain and not snow"]
@@ -54,7 +73,7 @@
                         ["hot and humid summers especially along the coast where temperatures are above 65-85% humidity", 
                         "35-40 inches of rain throughout the year", "snow and wind during the winter"]
                     },
-   "pacific coast" :  {"common_text": 
+    "pacific coast" :  {"common_text": 
                         ["in 2013 california, oregon, washington, and british columbia agreed on a pacific coast action plan on climate and energy which promoted energy efficiency",
                         "pacific northwest is cold and rainy while the south towards mexico is sunny with mild temperatures"],
 
@@ -63,18 +82,19 @@
                       "oregon": 
                         {"info" : ["fog, drizzle, and clouds", "30-40 degrees in the winter", "50-60 degrees from spring to fall"]},
                       "california": 
-                        {"info" : ["a lot of rain in the winter and hardly any during the summer", "40-60 degrees in the winter", "50-70 degrees in the summer", "mild and sunny"]},
-                      "rocky mountain west" : 
-                        {"common_text": ["the weather in the rocky mountain west can change rapidly", 
-                                        "in the winter there are sudden blizzards, high wind, and deep snowpacks",
-                                        "in the spring the weather alternates between warm and cold, wet and dry", 
-                                        "in the summer the temperatures can read 70's or 80's during the day and drop to 40's at night",
-                                        "in the fall the weather is clear, crisp air, blue skies, and generally dry weather but early snowstorms may occur"]
-                        },
+                        {"info" : ["a lot of rain in the winter and hardly any during the summer", "40-60 degrees in the winter", "50-70 degrees in the summer", "mild and sunny"]}
                       },
-  "southeast" : {"common_text": 
-                  ["there are over 70 million people in the southeast", "29,000 miles of coastline", " warm and wet climate with mild and humid winters",
-                  "moderate and severe droughts occur especially in the spring and summer", "a lot of hurricanes occur in this region"]
+    "rocky mountain west" : {"common_text":
+                              ["the weather in the rocky mountain west can change rapidly", 
+                              "in the winter there are sudden blizzards, high wind, and deep snowpacks",
+                              "in the spring the weather alternates between warm and cold, wet and dry", 
+                              "in the summer the temperatures can read 70's or 80's during the day and drop to 40's at night",
+                              "in the fall the weather is clear, crisp air, blue skies, and generally dry weather but early snowstorms may occur"]
+                            },
+    "southeast" : {"common_text": 
+                    ["there are over 70 million people in the southeast", "29,000 miles of coastline", 
+                    "warm and wet climate with mild and humid winters",
+                    "droughts occur in the spring and summer, so water conservation is extremely important"]
                 }
 }
 
