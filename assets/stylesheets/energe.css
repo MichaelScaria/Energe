@@ -196,6 +196,7 @@ a.button::selection {
   height: 180px;
   background: url(../images/step1.png) no-repeat scroll center 0;
   background-size: 262px 180px;
+
   margin: 0 auto;
 }
 
@@ -236,7 +237,16 @@ a.button::selection {
   padding: 5% 0 0 0;
   color: rgb(249, 249, 249);
   font-size: 52px;
-  font-family: 'Verlag Bold';
+  font-family: 'Open Sans';
+  width: 100%;
+  text-align: center;
+}
+
+.quote {
+  padding: 2% 0 0 0;
+  color: rgb(249, 249, 249);
+  font-size: 1.7em;
+  font-family: 'Open Sans';
   width: 100%;
   text-align: center;
 }
