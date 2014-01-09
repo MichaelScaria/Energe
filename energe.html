@@ -64,25 +64,25 @@
 
 <script>
   $(window).on('scroll', function () {
-      var scrollTop = $(window).scrollTop(), elementOffset = $('.steps').offset().top, distance = (elementOffset - scrollTop);
-      var height = $(window).height();
+    var scrollTop = $(window).scrollTop(), elementOffset = $('.steps').offset().top, distance = (elementOffset - scrollTop);
+    var height = $(window).height();
     var scrollTop = $(window).scrollTop();
-      console.log('body:' + $('.elements').parent().height())
-      //animate circles up/down as user scrolls towards/away from it
-      if (distance <= 500) {
-        $('.elements').css('margin-top', .0 * $('.elements').parent().height());
-        // $('.instruction').css('margin-top', .06 * $('.step1').parent().parent().height());
-        // $('.image').css('background-color: red');
-        // $('.image').css('margin-top', 1);
-      }
-      else {
-        $('.elements').css('margin-top', .09 * $('.elements').parent().parent().height());
-      };
+    console.log('body:' + $('.elements').parent().height())
+    //animate circles up/down as user scrolls towards/away from it
+    if (distance <= 500) {
+      $('.elements').css('margin-top', .0 * $('.elements').parent().height());
+      // $('.instruction').css('margin-top', .06 * $('.step1').parent().parent().height());
+      // $('.image').css('background-color: red');
+      // $('.image').css('margin-top', 1);
+    }
+    else {
+      $('.elements').css('margin-top', .09 * $('.elements').parent().parent().height());
+    };
 
-      //if steps is fully on screen, change logo background to black
-      if (distance > 0) {
-        $('.circle').css('background-color: red');
-      }
+    //if steps is fully on screen, change logo background to black
+    if (distance > 0) {
+      $('.circle').css('background-color: red');
+    }
   });
 
   var counter = 0;
