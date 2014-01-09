@@ -1,71 +1,72 @@
 <!DOCTYPE html>
-	<head>
-		<title>Energe</title>
-		<link href="assets/stylesheets/energe.css" rel="stylesheet" type="text/css">
-		<script src="assets/javascript/energe.js"></script>
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-	</head>
-	<body>
-		<div class="header">
-			<a href='energe.html'>
-				<div class="logo">
-					<img src="assets/images/logo-2.png" width="215px" height="97px" class='image'>
-          <a href=""><div class="subtitle" style="width: 215px;height:27px;">GEOLOCATE</div></a>
-
-				</div>
-			</a>
-		</div>
-		<div class="splash">
-			<div class="title">
-				ENERGY EFFICIENT HOUSING. MADE EASY.
-			</div>
-			<div class="user_prompt"><a class="button" href="geolocate.html">GEOLOCATE</a></div>
-		</div>
-		<div class="content">
-			<div class="steps">
-				<div class="title">
-	 				Creating an energy efficient house has never been easier.
-				</div>
-				<span class="border"></span>
-				<!-- <div class="circles">
-					<div class="circle step1"></div>
-					<div class="circle step2"></div>
-					<div class="circle step3"></div>
-				</div>
-				<div class="instructions">
-					<div class="instruction">Pick an area that suits your needs using our tech.</div>
-					<div class="instruction middle">Select a house that best fits your lifestyle.</div>
-					<div class="instruction">Follow proper energy conservation techniques.</div>
-				</div> -->
-				<div class="elements">
-					<div class="element">
-						<div class="activity_1"></div>
-						<div class="text">Pick an area that suits your needs using our tech.</div>
-					</div>
-					<div class="element middle">
-						<div class="activity_2"></div>
-						<div class="text">Select a house that best fits your lifestyle.</div>
-					</div>
-					<div class="element">
-						<div class="activity_3"></div>
-						<div class="text">Follow proper energy conservation techniques.</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="tips">
-			<div class="title">
-				TIPS.
-			</div>
-		</div>
-	</body>
+<html>
+  <head>
+    <title>Energe</title>
+    <link href="assets/stylesheets/energe.css" rel="stylesheet" type="text/css">
+    <script src="assets/javascript/energe.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  </head>
+  <body>
+    <div class="header">
+      <a href='energe.html'>
+        <div class="logo">
+          <img src="assets/images/logo-2.png" width="215px" height="97px" class='image'>
+          <a href=""><div class="subtitle" style="height:27px;">GEOLOCATE</div></a>
+          <a href=""><div class="subtitle" style="height:27px;">ABOUT</div></a>
+        </div>
+      </a>
+    </div>
+    <div class="splash">
+      <div class="title">
+        ENERGY EFFICIENT HOUSING. MADE EASY.
+      </div>
+      <div class="user_prompt"><a class="button" href="geolocate.html">GEOLOCATE</a></div>
+    </div>
+    <div class="content">
+      <div class="steps">
+        <div class="title">
+          Creating an energy efficient house has never been easier.
+        </div>
+        <span class="border"></span>
+        <!-- <div class="circles">
+          <div class="circle step1"></div>
+          <div class="circle step2"></div>
+          <div class="circle step3"></div>
+        </div>
+        <div class="instructions">
+          <div class="instruction">Pick an area that suits your needs using our tech.</div>
+          <div class="instruction middle">Select a house that best fits your lifestyle.</div>
+          <div class="instruction">Follow proper energy conservation techniques.</div>
+        </div> -->
+        <div class="elements">
+          <div class="element">
+            <div class="activity_1"></div>
+            <div class="text">Pick an area that suits your needs using our tech.</div>
+          </div>
+          <div class="element middle">
+            <div class="activity_2"></div>
+            <div class="text">Select a house that best fits your lifestyle.</div>
+          </div>
+          <div class="element">
+            <div class="activity_3"></div>
+            <div class="text">Follow proper energy conservation techniques.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="tips">
+      <div class="title">
+        TIPS.
+      </div>
+    </div>
+  </body>
 </html>
 
 <script>
   $(window).on('scroll', function () {
       var scrollTop = $(window).scrollTop(), elementOffset = $('.steps').offset().top, distance = (elementOffset - scrollTop);
       var height = $(window).height();
-	  var scrollTop = $(window).scrollTop();
+    var scrollTop = $(window).scrollTop();
       console.log('body:' + $('.elements').parent().height())
       //animate circles up/down as user scrolls towards/away from it
       if (distance <= 500) {
