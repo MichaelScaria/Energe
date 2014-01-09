@@ -6,94 +6,7 @@
 		<script src="http://code.jquery.com/jquery-1.10.2.js"></script>
 		<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
         <script>
-			  $(function() {
-			    var availableTags = [
-			    "Albuquerque, New Mexico",
-			    "Anaheim, California", 
-			    "Arlington, Texas", 
-			    "Atlanta, Georgia", 
-			    "Aurora, Colorado", 
-			    "Austin, Texas", 
-			    "Bakersfield, California", 
-			    "Baltimore, Maryland", 
-			    "Baton Rouge, Louisiana", 
-			    "Birmingham, Alabama", 
-			    "Boise, Idaho", 
-			    "Boston, Massachusetts", 
-			    "Buffalo, New York", 
-			    "Charlotte, North Carolina", 
-			    "Chicago, Illinois", 
-			    "Cincinnati, Ohio", 
-			    "Cleveland, Ohio", 
-			    "Colorado Springs, Colorado", 
-			    "Columbus, Ohio", 
-			    "Corpus Christi, Texas", 
-			    "Dallas, Texas", 
-			    "Denver, Colorado", 
-			    "Detroit, Michigan", 
-			    "El Paso, Texas", 
-			    "Fort Worth, Texas", 
-			    "Fresno, California", 
-			    "Frisco, Texas", 
-			    "Garland, Texas", 
-			    "Greensboro, North Carolina", 
-			    "Henderson, Nevada", 
-			    "Houston, Texas", 
-			    "Indianapolis, Indiana", 
-			    "Jacksonville, Florida", 
-			    "Kansas City, Missouri", 
-			    "Las Vegas, Nevada", 
-			    "Lincoln, Nebraska", 
-			    "Little Rock, Arkansas", 
-			    "Los Angeles, California", 
-			    "Louisville, Kentucky", 
-			    "Madison, Wisconsin", 
-			    "Memphis, Tennessee", 
-			    "Mesa, Arizona", 
-			    "Mesquite, Texas", 
-			    "Miami, Florida", 
-			    "Milwaukee, Wisconsin", 
-			    "Minneapolis, Minnesota", 
-			    "Montgomery, Alabama", 
-			    "Nashville, Tennessee", 
-			    "New Orleans, Louisiana", 
-			    "New York, New York", 
-			    "Newark, New Jersey", 
-			    "Oakland, California", 
-			    "Oklahoma City, Oklahoma", 
-			    "Omaha, Nebraska", 
-			    "Orlando, Florida", 
-			    "Philadelphia, Pennsylvania", 
-			    "Phoenix, Arizona", 
-			    "Plano, Texas", 
-			    "Portland, Oregon", 
-			    "Providence, Rhode Island", 
-			    "Raleigh, North Carolina", 
-			    "Reno, Nevada", 
-			    "Richmond, Virginia", 
-			    "Sacramento, California", 
-			    "Salt Lake City, Utah", 
-			    "San Antonio, Texas", 
-			    "San Diego, California", 
-			    "San Francisco, California", 
-			    "San Jose, California", 
-			    "Santa Ana, California", 
-			    "Seattle, Washington", 
-			    "St. Louis, Missouri", 
-			    "Stockton, California", 
-			    "Tampa, Florida", 
-			    "Toledo, Ohio", 
-			    "Tucson, Arizona", 
-			    "Tulsa, Oklahoma", 
-			    "Wichita, Kansas"]
-			    $( ".tags" ).autocomplete({
-			      source: availableTags,
-			      messages: {
-			        noResults: '',
-			        results: function() {}
-				    }
-			    });
-			  });
+			  
   		</script>
 	</head>
 	<body style ='background-color: rgb(35, 35, 35)'>
@@ -124,6 +37,94 @@
 </html>
 
 <script>
+	var locations = [
+	  "albuquerque, new mexico",
+	  "anaheim, california", 
+	  "arlington, texas", 
+	  "atlanta, georgia", 
+	  "aurora, colorado", 
+	  "austin, texas", 
+	  "bakersfield, california", 
+	  "baltimore, maryland", 
+	  "baton rouge, louisiana", 
+	  "birmingham, alabama", 
+	  "boise, idaho", 
+	  "boston, massachusetts", 
+	  "buffalo, new york", 
+	  "charlotte, north carolina", 
+	  "chicago, illinois", 
+	  "cincinnati, ohio", 
+	  "cleveland, ohio", 
+	  "colorado springs, colorado", 
+	  "columbus, ohio", 
+	  "corpus christi, texas", 
+	  "dallas, texas", 
+	  "denver, colorado", 
+	  "detroit, michigan", 
+	  "el paso, texas", 
+	  "fort worth, texas", 
+	  "fresno, california", 
+	  "frisco, texas", 
+	  "garland, texas", 
+	  "greensboro, north carolina", 
+	  "henderson, nevada", 
+	  "houston, texas", 
+	  "indianapolis, indiana", 
+	  "jacksonville, florida", 
+	  "kansas city, missouri", 
+	  "las vegas, nevada", 
+	  "lincoln, nebraska", 
+	  "little rock, arkansas", 
+	  "los angeles, california", 
+	  "louisville, kentucky", 
+	  "madison, wisconsin", 
+	  "memphis, tennessee", 
+	  "mesa, arizona", 
+	  "mesquite, texas", 
+	  "miami, florida", 
+	  "milwaukee, wisconsin", 
+	  "minneapolis, minnesota", 
+	  "montgomery, alabama", 
+	  "nashville, tennessee", 
+	  "new orleans, louisiana", 
+	  "new york, new york", 
+	  "newark, new jersey", 
+	  "oakland, california", 
+	  "oklahoma city, oklahoma", 
+	  "omaha, nebraska", 
+	  "orlando, florida", 
+	  "philadelphia, pennsylvania", 
+	  "phoenix, arizona", 
+	  "plano, texas", 
+	  "portland, oregon", 
+	  "providence, rhode island", 
+	  "raleigh, north carolina", 
+	  "reno, nevada", 
+	  "richmond, virginia", 
+	  "sacramento, california", 
+	  "salt lake city, utah", 
+	  "san antonio, texas", 
+	  "san diego, california", 
+	  "san francisco, california", 
+	  "san jose, california", 
+	  "santa ana, california", 
+	  "seattle, washington", 
+	  "st.louis, missouri", 
+	  "stockton, california", 
+	  "tampa, florida", 
+	  "toledo, ohio", 
+	  "tucson, arizona", 
+	  "tulsa, oklahoma", 
+	  "wichita, kansas"];
+
+	 $( ".tags" ).autocomplete({
+	    source: locations,
+	    messages: {
+	      noResults: '',
+	      results: function() {}
+	    }
+	  }); 
+
   var locationInfo;
 	$(document).ready( function() { 
 		$.ajax({
@@ -142,32 +143,7 @@
 		$.getJSON('http://freegeoip.net/json/', function(location) {
 			//if ip address is trackable
 			if (location.city && location.region_name) {
-			 	$(".tags").val(location.city.toUpperCase() + ', ' + location.region_name.toUpperCase())
-			 	$.ajax({
-	        url: "http://michaelscaria.herokuapp.com/location?state=" +location.region_name.toLowerCase()+ "&city="+"dallas",
-	        // url: "http://michaelscaria.herokuapp.com/location?state=" +location.region_name.toLowerCase()+ "&city="+location.city.toLowerCase(),
-	        success: function( data ) {
-	          //https://s3-us-west-1.amazonaws.com/michaelscaria/location/texas/Dallas.png
-	          console.log(data['image_url'])
-	          $('.geolocate_background').replaceWith('<a href="http://www.google.com"><div class="location_image" style="background-image: url(\'' +data['image_url']+'\');"></div></a>');
-	          // $('.body').css("background-image: url(\'' +data['image_url']+'\');")
-	          // $('.geolocate_background').replaceWith('<div class="location_image"></div>');
-
-	          var state = location.region_name.toLowerCase(); var city = location.city.toLowerCase();
-	          
-	          console.log(locationInfo[location.region_name.toLowerCase()][location.city.toLowerCase()]);
-	          // var facts = locationInfo[location.region_name.toLowerCase()][location.city.toLowerCase()];
-	          var facts = locationInfo[location.region_name.toLowerCase()]['dallas'];
-	          var factsDiv = '<div class="facts">'
-	          for (var i = 0; i < facts.length; i++) {
-	          	console.log(facts[i])
-	          	factsDiv = factsDiv +'<div class="fact">' +facts[i].toUpperCase()+ '</div>';
-	          };
-	          factsDiv = factsDiv + '</div>';
-	          $('.location_image').append(factsDiv);
-
-	        }
-		    });
+			 	search(location.city, location.region_name);
 			};
 		});
 	})
@@ -180,17 +156,65 @@
 	})
 
 
-	// {
-	//    source: "smart-ip.net",
-	//    host: "14.200.158.65",
-	//    lang: "en",
-	//    countryName: "Australia",
-	//    countryCode: "AU",
-	//    city: "South Sydney Municipality",
-	//    region: "New South Wales",
-	//    latitude: "-33.9000",
-	//    longitude: "151.2000",
-	//    timezone: "Australia/NSW"
-	// }
+	$('body').on('click', '.search', function(args) {
+		var query = $('.tags').val();
+
+		if (query.split(', ').length > 1) {
+			var components = query.split(', ');
+			var city = components[0];
+			var state = components[1];
+			search(city, state);
+			
+		}
+		else {
+			alert('Your query doesn\'t match our "city, state" format');
+		};
+
+	})
+
+	function search(city, state) {
+		var t = '';
+		for (var i = 0; i < locations.length; i++) {
+			var components = locations[i].toUpperCase().split(', '); 
+
+			t = t + '"' + components[0].toUpperCase() + ', ' + components[1].toUpperCase() +'",\n';
+		};
+		console.log(t);
+
+		if (jQuery.inArray(city.toLowerCase() + ', ' + state.toLowerCase(), locations) == -1) {
+			alert('City not found in our database, please try another location.');
+			return;
+		}
+		$(".tags").val(city.toUpperCase() + ', ' + state.toUpperCase())
+	 	$.ajax({
+      url: "http://michaelscaria.herokuapp.com/location?state=" +state.toLowerCase()+ "&city="+"dallas",
+      // url: "http://michaelscaria.herokuapp.com/location?state=" +location.region_name.toLowerCase()+ "&city="+location.city.toLowerCase(),
+      success: function( data ) {
+        //https://s3-us-west-1.amazonaws.com/michaelscaria/location/texas/Dallas.png
+        console.log(data['image_url'])
+        $('.geolocate_background').replaceWith('<a href="http://www.google.com"><div class="location_image" style="background-image: url(\'' +data['image_url']+'\');"></div></a>');
+        // $('.body').css("background-image: url(\'' +data['image_url']+'\');")
+        // $('.geolocate_background').replaceWith('<div class="location_image"></div>');
+
+        console.log(locationInfo[state.toLowerCase()][city.toLowerCase()]);
+        // var facts = locationInfo[location.region_name.toLowerCase()][location.city.toLowerCase()];
+        var facts = locationInfo[state.toLowerCase()]['dallas'];
+        var factsDiv = '<div class="facts">'
+        for (var i = 0; i < facts.length; i++) {
+        	console.log(facts[i])
+        	factsDiv = factsDiv +'<div class="fact">' +facts[i].toUpperCase()+ '</div>';
+        };
+        factsDiv = factsDiv + '</div>';
+        $('.location_image').append(factsDiv);
+
+      }
+    });
+	}
 
 </script>
+
+
+
+"ALBUQUERQUE, NEW MEXICO",
+"ANAHEIM, CALIFORNIA",
+"ARLINGTON, TEXAS","ATLANTA, GEORGIA","AURORA, COLORADO","AUSTIN, TEXAS","BAKERSFIELD, CALIFORNIA","BALTIMORE, MARYLAND","BATON ROUGE, LOUISIANA","BIRMINGHAM, ALABAMA","BOISE, IDAHO","BOSTON, MASSACHUSETTS","BUFFALO, NEW YORK","CHARLOTTE, NORTH CAROLINA","CHICAGO, ILLINOIS","CINCINNATI, OHIO","CLEVELAND, OHIO","COLORADO SPRINGS, COLORADO","COLUMBUS, OHIO","CORPUS CHRISTI, TEXAS","DALLAS, TEXAS","DENVER, COLORADO","DETROIT, MICHIGAN","EL PASO, TEXAS","FORT WORTH, TEXAS","FRESNO, CALIFORNIA","FRISCO, TEXAS","GARLAND, TEXAS","GREENSBORO, NORTH CAROLINA","HENDERSON, NEVADA","HOUSTON, TEXAS","INDIANAPOLIS, INDIANA","JACKSONVILLE, FLORIDA","KANSAS CITY, MISSOURI","LAS VEGAS, NEVADA","LINCOLN, NEBRASKA","LITTLE ROCK, ARKANSAS","LOS ANGELES, CALIFORNIA","LOUISVILLE, KENTUCKY","MADISON, WISCONSIN","MEMPHIS, TENNESSEE","MESA, ARIZONA","MESQUITE, TEXAS","MIAMI, FLORIDA","MILWAUKEE, WISCONSIN","MINNEAPOLIS, MINNESOTA","MONTGOMERY, ALABAMA","NASHVILLE, TENNESSEE","NEW ORLEANS, LOUISIANA","NEW YORK, NEW YORK","NEWARK, NEW JERSEY","OAKLAND, CALIFORNIA","OKLAHOMA CITY, OKLAHOMA","OMAHA, NEBRASKA","ORLANDO, FLORIDA","PHILADELPHIA, PENNSYLVANIA","PHOENIX, ARIZONA","PLANO, TEXAS","PORTLAND, OREGON","PROVIDENCE, RHODE ISLAND","RALEIGH, NORTH CAROLINA","RENO, NEVADA","RICHMOND, VIRGINIA","SACRAMENTO, CALIFORNIA","SALT LAKE CITY, UTAH","SAN ANTONIO, TEXAS","SAN DIEGO, CALIFORNIA","SAN FRANCISCO, CALIFORNIA","SAN JOSE, CALIFORNIA","SANTA ANA, CALIFORNIA","SEATTLE, WASHINGTON","ST.LOUIS, MISSOURI","STOCKTON, CALIFORNIA","TAMPA, FLORIDA","TOLEDO, OHIO","TUCSON, ARIZONA","TULSA, OKLAHOMA","WICHITA, KANSAS",

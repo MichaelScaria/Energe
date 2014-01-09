@@ -324,10 +324,9 @@ a.button::selection {
   font-weight: 400;
   display: inline-block;
   padding: 9px 7px;
-  font-size: .6em;
-  letter-spacing: 0.20em;
+  font-size: .8em;
+  letter-spacing: 0.15em;
   -webkit-border-radius: 3px;
-  margin-top: 3%;
   display: inline-block;
 }
 
