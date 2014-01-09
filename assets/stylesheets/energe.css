@@ -314,17 +314,17 @@ a.button::selection {
 
 .facts {
   color: rgb(249, 249, 249);
-  font-size: 52px;
+  font-size: 38px;
   font-family: 'Verlag Bold';
-  margin: 10% 0 0 20%;
+  margin: 10% 0 0 10%;
   /*margin-left: 15%;*/
-  width: 90%;
+  width:80%;
   height: 100%;
   /*text-align:center;*/
 }
 
 .fact {
-  margin-bottom: 1%;
+  margin-bottom: 2%;
 }
 
 /*ui-autocomplete*/

@@ -132,7 +132,6 @@
   var locationInfo;
 	$.get('assets/data/locations.json', function(data) {    
 	    locationInfo = JSON.parse(data);
-	    console.log(locationInfo["great plains"]);
 	});
 
 
@@ -170,33 +169,67 @@
 	})
 
 	function search(city, state) {
+		
 		if (jQuery.inArray(city.toUpperCase() + ', ' + state.toUpperCase(), locations) == -1) {
 			alert('City not found in our database, please try another location.');
 			return;
 		}
+		city = city.toLowerCase();
+		state = state.toLowerCase();
 		$(".tags").val(city.toUpperCase() + ', ' + state.toUpperCase())
-		var region = mappingInfo[state.toLowerCase()];
+		//map the state to a region
+		var region = mappingInfo[state];
+		//find the region in the json file
+		var regionInfo = locationInfo[region];
+		//get all of the text that goes with the specific location and add to textArray
+		var textArray = regionInfo['common_text'];
+		//find appropriate images/attributions
+		var image, link;
+		if (regionInfo[state]) {
+			var stateInfo = regionInfo[state];
+			if (stateInfo['info']) {
+				textArray = $.merge(stateInfo['info'], textArray);
+				image = stateInfo['default_image'];
+				link = stateInfo['default_link'];
+				if (stateInfo[city] && stateInfo[city]['image_url']) {
+					image = stateInfo[city]['image_url'];
+					link = stateInfo[city]['link'];
+				};
+			};
+			//TODO include all state images
+			console.log(textArray);
+		};
+		image = 'https://s3-us-west-1.amazonaws.com/michaelscaria/location/texas/Dallas.png'
+		console.log(link +  '  ' + image);
+		$('.geolocate_background').replaceWith('<a href="' +link+ '"><div class="location_image" style="background-image: url(\'' +image+'\');"></div></a>');
 
+    var factsDiv = '<div class="facts">'
+    for (var i = 0; i < textArray.length; i++) {
+    	// console.log(facts[i])
+    	factsDiv = factsDiv +'<div class="fact">' +textArray[i].toUpperCase()+ '</div>';
+    };
+    factsDiv = factsDiv + '</div>';
+    $('.location_image').append(factsDiv);
 
-	 	$.ajax({
-      url: "http://michaelscaria.herokuapp.com/location?state=" +state.toLowerCase()+ "&city="+"dallas",
-      success: function( data ) {
-        //https://s3-us-west-1.amazonaws.com/michaelscaria/location/texas/Dallas.png
-        // console.log(data['image_url'])
-        $('.geolocate_background').replaceWith('<a href="http://www.google.com"><div class="location_image" style="background-image: url(\'' +data['image_url']+'\');"></div></a>');
+	 	// $.ajax({
+   //    url: "http://michaelscaria.herokuapp.com/location?state=" +state.toLowerCase()+ "&city="+"dallas",
+   //    success: function( data ) {
+   //      //https://s3-us-west-1.amazonaws.com/michaelscaria/location/texas/Dallas.png
+   //      // console.log(data['image_url'])
+   //      $('.geolocate_background').replaceWith('<a href="http://www.google.com"><div class="location_image" style="background-image: url(\'' +data['image_url']+'\');"></div></a>');
 
-        // console.log(locationInfo[state.toLowerCase()][city.toLowerCase()]);
-        // var facts = locationInfo[location.region_name.toLowerCase()][location.city.toLowerCase()];
-        var facts = locationInfo[state.toLowerCase()]['dallas'];
-        var factsDiv = '<div class="facts">'
-        for (var i = 0; i < facts.length; i++) {
-        	// console.log(facts[i])
-        	factsDiv = factsDiv +'<div class="fact">' +facts[i].toUpperCase()+ '</div>';
-        };
-        factsDiv = factsDiv + '</div>';
-        $('.location_image').append(factsDiv);
-      }
-    });
+   //      // console.log(locationInfo[state.toLowerCase()][city.toLowerCase()]);
+   //      // var facts = locationInfo[location.region_name.toLowerCase()][location.city.toLowerCase()];
+   //      var facts = locationInfo[state.toLowerCase()]['dallas'];
+   //      var factsDiv = '<div class="facts">'
+   //      for (var i = 0; i < facts.length; i++) {
+   //      	// console.log(facts[i])
+   //      	factsDiv = factsDiv +'<div class="fact">' +facts[i].toUpperCase()+ '</div>';
+   //      };
+   //      factsDiv = factsDiv + '</div>';
+   //      $('.location_image').append(factsDiv);
+   //    }
+   //  });
 	}
 
 </script>

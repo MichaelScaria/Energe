@@ -9,6 +9,16 @@
                       "periodic droughts such as the dust bowl of the 1930s", 
                       "65 native american tribes located in the great plains", 
                       "10% of the land is protected for wildlife habitat"],
+                    "oklahoma" : 
+                      {
+                        "info" :   ["set your thermostat to a temperature that is comfortable but not too high or low.", 
+                                    "close exterior doors and windows tight while the air conditioning is on", 
+                                    "set your thermostat to auto so the air conditioner is not running constantly", 
+                                    "clean air conditioner filters regularly", "when you're asleep, turn your thermostat back 10-15 degrees"],
+
+                        "default_image" : "http://imgur.com/02CspfN",
+                        "default_link" : "https://www.dropbox.com/sh/ygwbtqzqwg74x52/Pd1QtxlXAz/Dallas%20Skyline.jpg"
+                      },
 
                     "texas": 
                       {
@@ -24,7 +34,7 @@
                                       "info" : ["1.241 million in population", "average listing price for a home is $582,318", 
                                                "the high in july is 96 degrees", "the low in january is 35 degrees",
                                                "36 inches of rain per year", "2 inches of snow per year"],
-                                      "image_url": "http://imgur.com/02CspfN",
+                                      "image_url": "http://tinypic.com/r/2akfus8/5",
                                       "link": "https://www.dropbox.com/sh/ygwbtqzqwg74x52/Pd1QtxlXAz/Dallas%20Skyline.jpg"
                                     },
 
