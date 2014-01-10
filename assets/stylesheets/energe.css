@@ -172,7 +172,16 @@ a.button::selection {
 .element {
   display: inline-block;
   vertical-align: middle;
-  width: 30%;
+  width: 28%;
+  margin: 0 3%;
+}
+
+.element:first-child {
+  margin-left: 0;
+}
+
+.element:last-child {
+  margin-right: 0;
 }
 
 .element img {
@@ -187,17 +196,17 @@ a.button::selection {
 }
 
 .tips {
-  height: 650px;
+  /*height: 650px;*/
   background-color: #27AE60;
   /*background-color: rgb(40, 40, 40);*/
   /*margin: 0;*/
   /*padding-top: 600px;*/
-  background-position: 50% 225px;
+  padding: 40px;
 }
 
 .tips .title {
   /*top, right, bottom, left*/
-  padding: 5% 0 0 0;
+  /*padding: 5% 0 0 0;*/
   color: rgb(249, 249, 249);
   font-size: 52px;
   font-family: 'Open Sans';
