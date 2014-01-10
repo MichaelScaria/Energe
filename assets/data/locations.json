@@ -6,12 +6,10 @@
             "bitter, cold and snowy winters",
             "west is semi-arid",
             "east is considerably wetter",
-            "population in 2009 was 9.9 million",
             "more than 70% of the area is used for agriculture",
             "heavily dependent on crops like corn, wheat, barley, hay, and cotton",
-            "periodic droughts such as the dust bowl of the 1930s",
-            "65 native american tribes located in the great plains",
-            "10% of the land is protected for wildlife habitat"
+            "because of periodic droughts it is suggested to alternate watering cycles",
+            "solar pannels can be used to conserve nonrenewable energy"
         ],
         "oklahoma": {
             "info": [
@@ -43,19 +41,19 @@
             "default_image": "https://s3-us-west-1.amazonaws.com/michaelscaria/images/Omaha.png",
             "default_link": "http://commons.wikimedia.org/wiki/File%3AOmaha%2C_Nebraska%2C_USA_2008.jpg",
             "omaha": {
-                "image_url": "http://imgur.com/7sRStGD",
+                "image_url": "https://s3-us-west-1.amazonaws.com/michaelscaria/images/Omaha.png",
                 "link": "http://commons.wikimedia.org/wiki/File%3AOmaha%2C_Nebraska%2C_USA_2008.jpg"
             }
         },
         "texas": {
             "info": [
                 "set your thermostat to a temperature that is comfortable but not too high or low.",
-                "close exterior doors and windows tight while the air conditioning is on",
-                "set your thermostat to auto so the air conditioner is not running constantly",
+                "close exterior doors and windows tight while the air conditioner is on",
+                "set your thermostat to auto so that the air conditioner is not running constantly",
                 "clean air conditioner filters regularly",
                 "when you're asleep, turn your thermostat back 10-15 degrees"
             ],
-            "default_image": "http://imgur.com/02CspfN",
+            "default_image": "https://s3-us-west-1.amazonaws.com/michaelscaria/images/Dallas.png",
             "default_link": "https://www.dropbox.com/sh/ygwbtqzqwg74x52/Pd1QtxlXAz/Dallas%20Skyline.jpg",
             "dallas": {
                 "info": [
@@ -66,7 +64,7 @@
                     "36 inches of rain per year",
                     "2 inches of snow per year"
                 ],
-                "image_url": "http://imgur.com/02CspfN",
+                "image_url": "https://s3-us-west-1.amazonaws.com/michaelscaria/images/Dallas.png",
                 "link": "https://www.dropbox.com/sh/ygwbtqzqwg74x52/Pd1QtxlXAz/Dallas%20Skyline.jpg"
             },
             "frisco": {
@@ -108,15 +106,15 @@
                     "51 inches of rain per year",
                     "0 inches of snow per year"
                 ],
-                "image_url": "http://imgur.com/B1xNVIh",
+                "image_url": "https://s3-us-west-1.amazonaws.com/michaelscaria/images/Houston.png",
                 "link": "http://commons.wikimedia.org/wiki/File%3APanoramic_Houston_skyline.jpg"
             },
             "austin": {
-                "image_url": "http://imgur.com/9XOAvUX",
+                "image_url": "https://s3-us-west-1.amazonaws.com/michaelscaria/images/Austin.png",
                 "link": "http://commons.wikimedia.org/wiki/File%3AAustinSkylineLouNeffPoint-2010-03-29-b.JPG"
             },
             "san antonio": {
-                "image_url": "http://imgur.com/IsMHaAB",
+                "image_url": "https://s3-us-west-1.amazonaws.com/michaelscaria/images/San+Antonio.png",
                 "link": "http://commons.wikimedia.org/wiki/File%3ADowntown_San_Antonio_View.JPG"
             }
         }
@@ -126,9 +124,8 @@
             "66 million americans",
             "flat prairie farmed for corn, soybean, wheat, and livestock grazing",
             "hot, humid summers and cold winters",
-            "july 12-16, 1995 heat wave with over 700 heat-related deaths",
-            "a lot of ticks and mosquitoes",
-            "poor air quality",
+            "use bug spray to reduce the amount of energy used in mechanical repelants",
+            "plant more trees to improve air quality without using a lot of energy",
             "intense precipitation which means flood damage and travel delays",
             "the great lakes are part of the geography and contain 78% of north america's freshwater"
         ],
@@ -340,6 +337,7 @@
             "there are over 70 million people in the southeast",
             "29,000 miles of coastline",
             "warm and wet climate with mild and humid winters",
+            "make sure windows and doors are sealed properly to keep from using too much energy trying to keep the house cool",
             "droughts occur in the spring and summer, so water conservation is extremely important"
         ],
         "florida": {
@@ -411,9 +409,12 @@
         "common_text": [
             "the weather in the rocky mountain west can change rapidly",
             "in the winter there are sudden blizzards, high wind, and deep snowpacks",
+            "use a fire place for heat without using energy from the heater",
+            "seal windows to prevent heat loss in the house",
             "in the spring the weather alternates between warm and cold, wet and dry",
             "in the summer the temperatures can read 70's or 80's during the day and drop to 40's at night",
-            "in the fall the weather is clear, crisp air, blue skies, and generally dry weather but early snowstorms may occur"
+            "in the fall the weather is clear, crisp air, blue skies, and generally dry weather but early snowstorms may occur",
+            "turn of the thermostat and open doors to save energy"
         ],
         "arizona": {
             "info": [
@@ -437,10 +438,9 @@
     },
     "pacific coast": {
         "common_text": [
-            "there are over 70 million people in the southeast",
-            "29,000 miles of coastline",
-            "warm and wet climate with mild and humid winters",
-            "droughts occur in the spring and summer, so water conservation is extremely important"
+            "in 2013 california, oregon, washington, and british columbia agreed on a pacific coast action plan on climate and energy which promoted energy efficiency",
+            "pacific northwest is cold and rainy while the south towards mexico is sunny with mild temperatures",
+            "solar pannels can be used to conserve nonrenewable energy"
         ],
         "california": {
             "default_image": "https://s3-us-west-1.amazonaws.com/michaelscaria/images/Long+Beach.png",

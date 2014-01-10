@@ -226,21 +226,40 @@ a.button::selection {
   text-align: center;
 }
 
+footer {
+  text-align: center;
+  padding: 40px;
+}
+
 .nav {
   font-family: 'Verlag Bold';
   color: white;
-  vertical-align:middle;
   display:inline-block;
-  margin-left:15%;
-  float:left;
-  height:5%;
-  font-size: 1.4em;
-  padding:2.7%;
+  vertical-align:middle;
+  font-size: 24px;
+  margin-right: 20px;
 }
 
 .socials {
   display: inline-block;
+  vertical-align: middle;
+  margin-left: 20px;
 }
+
+.socials .social {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 10px;
+}
+
+.socials .social:first-child {
+  margin-left: 0;
+}
+
+.socials .social:last-child {
+  margin-right: 0;
+}
+
 /***** GEOLOCATE PAGE *****/
 
 .geolocate_background {

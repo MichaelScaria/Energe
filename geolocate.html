@@ -200,7 +200,7 @@
 		};
 		// image = 'https://s3-us-west-1.amazonaws.com/michaelscaria/location/texas/Dallas.png'
 		console.log(link +  '  ' + image);
-		$('.geolocate_background').replaceWith('<a href="' +link+ '"><div class="location_image" style="background-image: url(\'' +image+'\');"></div></a>');
+		$('.geolocate_background').replaceWith('<div class="location_placeholder"><a href="' +link+ '"><div class="location_image" style="background-image: url(\'' +image+'\');"></div></a></div>');
 
     var factsDiv = '<div class="facts">'
     for (var i = 0; i < textArray.length; i++) {
