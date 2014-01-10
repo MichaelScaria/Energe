@@ -85,13 +85,13 @@
 
 	var mappingInfo;
 	$.get('assets/data/mapping.json', function(data) {    
-	    mappingInfo = JSON.parse(data);
+	    mappingInfo = data;
 	    console.log(mappingInfo);
 	});
 
   var locationInfo;
 	$.get('assets/data/locations.json', function(data) {    
-	    locationInfo = JSON.parse(data);
+	    locationInfo = data;
 	});
 
 
