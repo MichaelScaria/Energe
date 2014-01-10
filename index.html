@@ -68,4 +68,15 @@
       </div>
     </div>
   </body>
+  <script>
+    var height = $('.content').position().top - $('.header').height();
+    $(window).resize(function() {
+      height = $('.content').position().top - $('.header').height();
+    });
+    $(window).scroll(function() {
+      var _height = $(window).scrollTop();
+      var a = (_height/height) * 0.5;
+      $('.header').css('background-color', 'rgba(0,0,0,' + (a > 0.5 ? 0.5 : a) + ')');
+    });
+  </script>
 </html>
