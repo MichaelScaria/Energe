@@ -37,6 +37,9 @@ a {
   color: inherit;
 }
 
+footer {
+  background-color: rgb(35, 35, 35);
+}
 
 .header {
   position: fixed;
@@ -86,7 +89,7 @@ a {
 }
 
 .splash {
-  height: 650px;
+  height: 660px;
   background: url(../images/bkg-6.png) 50% 0 no-repeat fixed;
   margin: 0;
   padding: 0;
@@ -223,8 +226,21 @@ a.button::selection {
   text-align: center;
 }
 
+.nav {
+  font-family: 'Verlag Bold';
+  color: white;
+  vertical-align:middle;
+  display:inline-block;
+  margin-left:15%;
+  float:left;
+  height:5%;
+  font-size: 1.4em;
+  padding:2.7%;
+}
 
-
+.socials {
+  display: inline-block;
+}
 /***** GEOLOCATE PAGE *****/
 
 .geolocate_background {
@@ -337,4 +353,58 @@ a.button::selection {
   letter-spacing: 0.15em;
   -webkit-border-radius: 3px;
   display: inline-block;
+}
+
+/***** ABOUT PAGE *****/
+
+.title.about {
+  font-size: 2.5em;
+}
+
+.splash.about {
+  background: url(../images/bkg-7.png) 50% 0 no-repeat fixed;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-size: cover;
+}
+
+.credits {
+  width: 100%;
+  top: 0;
+  bottom:0;
+  position:fixed;
+  overflow-y:scroll;
+  overflow-x:hidden;
+}
+
+.team {
+  padding-top: 6%;
+  font-family: 'Verlag Bold';
+  font-size: 2.5em;
+  color: white;
+  text-align: center;
+}
+
+.teamlist {
+  padding-top: 3%;
+}
+
+.member {
+  display: inline-block;
+  width: 15%;
+}
+
+.member .name {
+  font-size: .7em;
+}
+
+.member .job {
+  font-size: .45em;
+}
+
+.circle {
+  border-radius: 50%;
 }
