@@ -1,110 +1,476 @@
 {
-  "great plains" : {
-                    "common_text": 
-                      ["southern portions have about 70-100 days per year over 90 degrees fahrenheit", 
-                      "northern portions have 10-20 days over 90 degrees fahrenheit", 
-                      "bitter, cold and snowy winters", "west is semi-arid", "east is considerably wetter", 
-                      "more than 70% of the area is used for agriculture", 
-                      "heavily dependent on crops like corn, wheat, barley, hay, and cotton", 
-                      "periodic droughts such as the dust bowl of the 1930s", 
-                      "65 native american tribes located in the great plains", 
-                      "10% of the land is protected for wildlife habitat"],
-                    "oklahoma" : 
-                      {
-                        "info" :   ["set your thermostat to a temperature that is comfortable but not too high or low.", 
-                                    "close exterior doors and windows tight while the air conditioning is on", 
-                                    "set your thermostat to auto so the air conditioner is not running constantly", 
-                                    "clean air conditioner filters regularly", "when you're asleep, turn your thermostat back 10-15 degrees"],
-
-                        "default_image" : "http://imgur.com/02CspfN",
-                        "default_link" : "https://www.dropbox.com/sh/ygwbtqzqwg74x52/Pd1QtxlXAz/Dallas%20Skyline.jpg"
-                      },
-
-                    "texas": 
-                      {
-                        "info" :   ["set your thermostat to a temperature that is comfortable but not too high or low.", 
-                                    "close exterior doors and windows tight while the air conditioning is on", 
-                                    "set your thermostat to auto so the air conditioner is not running constantly", 
-                                    "clean air conditioner filters regularly", "when you're asleep, turn your thermostat back 10-15 degrees"],
-
-                        "default_image" : "http://imgur.com/02CspfN",
-                        "default_link" : "https://www.dropbox.com/sh/ygwbtqzqwg74x52/Pd1QtxlXAz/Dallas%20Skyline.jpg",
-
-                        "dallas":   {
-                                      "info" : ["1.241 million in population", "average listing price for a home is $582,318", 
-                                               "the high in july is 96 degrees", "the low in january is 35 degrees",
-                                               "36 inches of rain per year", "2 inches of snow per year"],
-                                      "image_url": "http://tinypic.com/r/2akfus8/5",
-                                      "link": "https://www.dropbox.com/sh/ygwbtqzqwg74x52/Pd1QtxlXAz/Dallas%20Skyline.jpg"
-                                    },
-
-                        "frisco":   {
-                                      "info" : ["128,176 in population", "average listing price for a home is $473,253", 
-                                                "the high in july is 96 degrees", "the low in january is 33 degrees", 
-                                                "39 inches of rain per year", "3 inches of snow per year"]
-                                    },
-
-
-                        "allen" :   {
-                                      "info" : ["84,246 in population", "average listing price for a home is $442,102", 
-                                                "the high in july is 96 degrees", "the low in july is 33 degrees", 
-                                                "38 inches of rain per year", "3 inches of snow per year"]
-                                    },
-
-
-                        "mesquite": {
-                                      "info" : ["143,195 in population", "average listing price for a home is $117,389", 
-                                                "the high in july is 96 degrees", "the low in july is 35",
-                                                "36 inches of rain per year", "2 inches of snow per year"]
-                                    },
-
-                        "houston":  {
-                                      "info" : ["2.161 million in population", "average listing price for a home is $331,342",
-                                                "the high in july is 93 degrees", "the low in january is 46 degrees", 
-                                                "51 inches of rain per year", "0 inches of snow per year"]
-                                    }
-                      }
-                    },
-
-    "midwest" :       {"common_text": 
-                        ["66 million americans", "flat prairie farmed for corn, soybean, wheat, and livestock grazing", 
-                        "hot, humid summers and cold winters", "july 12-16, 1995 heat wave with over 700 heat-related deaths",
-                        "a lot of ticks and mosquitoes", "poor air quality", 
-                        "intense precipitation which means flood damage and travel delays",
-                        "the great lakes are part of the geography and contain 78% of north america's freshwater"]
-                      },
-
-    "northeast" :    {"common_text": ["dense cities and sparsely popluated towns",
-                      "portions of west virginia and the southern-most state experience more than 20 days per year of 90 degree temps",
-                      "northern areas of maine experience only one day per year abover 90 degrees",
-                      "majority of winter precipitation falls as rain and not snow"]
-                    },
-    "mid-atlantic" : {"common_text": 
-                        ["hot and humid summers especially along the coast where temperatures are above 65-85% humidity", 
-                        "35-40 inches of rain throughout the year", "snow and wind during the winter"]
-                    },
-    "pacific coast" :  {"common_text": 
-                        ["in 2013 california, oregon, washington, and british columbia agreed on a pacific coast action plan on climate and energy which promoted energy efficiency",
-                        "pacific northwest is cold and rainy while the south towards mexico is sunny with mild temperatures"],
-
-                      "washington": 
-                        {"info" : ["cloudy and rainy", "40-50 degrees in the winter", "60-70 degrees spring to fall"]},
-                      "oregon": 
-                        {"info" : ["fog, drizzle, and clouds", "30-40 degrees in the winter", "50-60 degrees from spring to fall"]},
-                      "california": 
-                        {"info" : ["a lot of rain in the winter and hardly any during the summer", "40-60 degrees in the winter", "50-70 degrees in the summer", "mild and sunny"]}
-                      },
-    "rocky mountain west" : {"common_text":
-                              ["the weather in the rocky mountain west can change rapidly", 
-                              "in the winter there are sudden blizzards, high wind, and deep snowpacks",
-                              "in the spring the weather alternates between warm and cold, wet and dry", 
-                              "in the summer the temperatures can read 70's or 80's during the day and drop to 40's at night",
-                              "in the fall the weather is clear, crisp air, blue skies, and generally dry weather but early snowstorms may occur"]
-                            },
-    "southeast" : {"common_text": 
-                    ["there are over 70 million people in the southeast", "29,000 miles of coastline", 
-                    "warm and wet climate with mild and humid winters",
-                    "droughts occur in the spring and summer, so water conservation is extremely important"]
-                }
+    "great plains": {
+        "common_text": [
+            "southern portions have about 70-100 days per year over 90 degrees fahrenheit",
+            "northern portions have 10-20 days over 90 degrees fahrenheit",
+            "bitter, cold and snowy winters",
+            "west is semi-arid",
+            "east is considerably wetter",
+            "population in 2009 was 9.9 million",
+            "more than 70% of the area is used for agriculture",
+            "heavily dependent on crops like corn, wheat, barley, hay, and cotton",
+            "periodic droughts such as the dust bowl of the 1930s",
+            "65 native american tribes located in the great plains",
+            "10% of the land is protected for wildlife habitat"
+        ],
+        "oklahoma": {
+            "info": [
+                "set your thermostat to a temperature that is comfortable but not too high or low.",
+                "close exterior doors and windows tight while the air conditioning is on",
+                "set your thermostat to auto so the air conditioner is not running constantly",
+                "clean air conditioner filters regularly",
+                "when you're asleep, turn your thermostat back 10-15 degrees"
+            ],
+            "default_image": "https://s3-us-west-1.amazonaws.com/michaelscaria/images/Oklahoma.png",
+            "default_link": "http://commons.wikimedia.org/wiki/File%3AOklahoma_city_downtown.JPG",
+            "oklahoma city": {
+                "image_url": "https://s3-us-west-1.amazonaws.com/michaelscaria/images/Oklahoma.png",
+                "link": "http://commons.wikimedia.org/wiki/File%3AOklahoma_city_downtown.JPG"
+            },
+            "tulsa": {
+                "image_url": "https://s3-us-west-1.amazonaws.com/michaelscaria/images/Tulsa.png",
+                "link": "http://commons.wikimedia.org/wiki/File%3ATulsa%2C_Oklahoma.jpg"
+            }
+        },
+        "nebraska": {
+            "info": [
+                "set your thermostat to a temperature that is comfortable but not too high or low.",
+                "close exterior doors and windows tight while the air conditioning is on",
+                "set your thermostat to auto so the air conditioner is not running constantly",
+                "clean air conditioner filters regularly",
+                "when you're asleep, turn your thermostat back 10-15 degrees"
+            ],
+            "default_image": "https://s3-us-west-1.amazonaws.com/michaelscaria/images/Omaha.png",
+            "default_link": "http://commons.wikimedia.org/wiki/File%3AOmaha%2C_Nebraska%2C_USA_2008.jpg",
+            "omaha": {
+                "image_url": "http://imgur.com/7sRStGD",
+                "link": "http://commons.wikimedia.org/wiki/File%3AOmaha%2C_Nebraska%2C_USA_2008.jpg"
+            }
+        },
+        "texas": {
+            "info": [
+                "set your thermostat to a temperature that is comfortable but not too high or low.",
+                "close exterior doors and windows tight while the air conditioning is on",
+                "set your thermostat to auto so the air conditioner is not running constantly",
+                "clean air conditioner filters regularly",
+                "when you're asleep, turn your thermostat back 10-15 degrees"
+            ],
+            "default_image": "http://imgur.com/02CspfN",
+            "default_link": "https://www.dropbox.com/sh/ygwbtqzqwg74x52/Pd1QtxlXAz/Dallas%20Skyline.jpg",
+            "dallas": {
+                "info": [
+                    "1.241 million in population",
+                    "average listing price for a home is $582,318",
+                    "the high in july is 96 degrees",
+                    "the low in january is 35 degrees",
+                    "36 inches of rain per year",
+                    "2 inches of snow per year"
+                ],
+                "image_url": "http://imgur.com/02CspfN",
+                "link": "https://www.dropbox.com/sh/ygwbtqzqwg74x52/Pd1QtxlXAz/Dallas%20Skyline.jpg"
+            },
+            "frisco": {
+                "info": [
+                    "128,176 in population",
+                    "average listing price for a home is $473,253",
+                    "the high in july is 96 degrees",
+                    "the low in january is 33 degrees",
+                    "39 inches of rain per year",
+                    "3 inches of snow per year"
+                ]
+            },
+            "allen": {
+                "info": [
+                    "84,246 in population",
+                    "average listing price for a home is $442,102",
+                    "the high in july is 96 degrees",
+                    "the low in july is 33 degrees",
+                    "38 inches of rain per year",
+                    "3 inches of snow per year"
+                ]
+            },
+            "mesquite": {
+                "info": [
+                    "143,195 in population",
+                    "average listing price for a home is $117,389",
+                    "the high in july is 96 degrees",
+                    "the low in july is 35",
+                    "36 inches of rain per year",
+                    "2 inches of snow per year"
+                ]
+            },
+            "houston": {
+                "info": [
+                    "2.161 million in population",
+                    "average listing price for a home is $331,342",
+                    "the high in july is 93 degrees",
+                    "the low in january is 46 degrees",
+                    "51 inches of rain per year",
+                    "0 inches of snow per year"
+                ],
+                "image_url": "http://imgur.com/B1xNVIh",
+                "link": "http://commons.wikimedia.org/wiki/File%3APanoramic_Houston_skyline.jpg"
+            },
+            "austin": {
+                "image_url": "http://imgur.com/9XOAvUX",
+                "link": "http://commons.wikimedia.org/wiki/File%3AAustinSkylineLouNeffPoint-2010-03-29-b.JPG"
+            },
+            "san antonio": {
+                "image_url": "http://imgur.com/IsMHaAB",
+                "link": "http://commons.wikimedia.org/wiki/File%3ADowntown_San_Antonio_View.JPG"
+            }
+        }
+    },
+    "midwest": {
+        "common_text": [
+            "66 million americans",
+            "flat prairie farmed for corn, soybean, wheat, and livestock grazing",
+            "hot, humid summers and cold winters",
+            "july 12-16, 1995 heat wave with over 700 heat-related deaths",
+            "a lot of ticks and mosquitoes",
+            "poor air quality",
+            "intense precipitation which means flood damage and travel delays",
+            "the great lakes are part of the geography and contain 78% of north america's freshwater"
+        ],
+        "illinois": {
+            "info": [
+                "66 million americans",
+                "flat prairie farmed for corn, soybean, wheat, and livestock grazing",
+                "hot, humid summers and cold winters",
+                "july 12-16, 1995 heat wave with over 700 heat-related deaths",
+                "a lot of ticks and mosquitoes",
+                "poor air quality",
+                "intense precipitation which means flood damage and travel delays",
+                "the great lakes are part of the geography and contain 78% of north america's freshwater"
+            ],
+            "default_image": "https://s3-us-west-1.amazonaws.com/michaelscaria/images/Chicago.png",
+            "default_link": "http://commons.wikimedia.org/wiki/File%3AChicagovanafSearsTower.jpg",
+            "chicago": {
+                "image_url": "https://s3-us-west-1.amazonaws.com/michaelscaria/images/Chicago.png",
+                "link": "http://commons.wikimedia.org/wiki/File%3AChicagovanafSearsTower.jpg"
+            }
+        },
+        "indiana": {
+            "info": [
+                "66 million americans",
+                "flat prairie farmed for corn, soybean, wheat, and livestock grazing",
+                "hot, humid summers and cold winters",
+                "july 12-16, 1995 heat wave with over 700 heat-related deaths",
+                "a lot of ticks and mosquitoes",
+                "poor air quality",
+                "intense precipitation which means flood damage and travel delays",
+                "the great lakes are part of the geography and contain 78% of north america's freshwater"
+            ],
+            "default_image": "https://s3-us-west-1.amazonaws.com/michaelscaria/images/Indianapolis.png",
+            "default_link": "http://commons.wikimedia.org/wiki/File%3ADowntown_indy_from_parking_garage_zoom.JPG",
+            "indianapolis": {
+                "image_url": "https://s3-us-west-1.amazonaws.com/michaelscaria/images/Indianapolis.png",
+                "link": "http://commons.wikimedia.org/wiki/File%3ADowntown_indy_from_parking_garage_zoom.JPG"
+            }
+        },
+        "michigan": {
+            "info": [
+                "66 million americans",
+                "flat prairie farmed for corn, soybean, wheat, and livestock grazing",
+                "hot, humid summers and cold winters",
+                "july 12-16, 1995 heat wave with over 700 heat-related deaths",
+                "a lot of ticks and mosquitoes",
+                "poor air quality",
+                "intense precipitation which means flood damage and travel delays",
+                "the great lakes are part of the geography and contain 78% of north america's freshwater"
+            ],
+            "default_image": "https://s3-us-west-1.amazonaws.com/michaelscaria/images/Detroit.png",
+            "default_link": "http://commons.wikimedia.org/wiki/File%3ADetroitSkyline.jpg",
+            "detroit": {
+                "image_url": "https://s3-us-west-1.amazonaws.com/michaelscaria/images/Detroit.png",
+                "link": "http://commons.wikimedia.org/wiki/File%3ADetroitSkyline.jpg"
+            }
+        },
+        "minnesota": {
+            "info": [
+                "66 million americans",
+                "flat prairie farmed for corn, soybean, wheat, and livestock grazing",
+                "hot, humid summers and cold winters",
+                "july 12-16, 1995 heat wave with over 700 heat-related deaths",
+                "a lot of ticks and mosquitoes",
+                "poor air quality",
+                "intense precipitation which means flood damage and travel delays",
+                "the great lakes are part of the geography and contain 78% of north america's freshwater"
+            ],
+            "default_image": "https://s3-us-west-1.amazonaws.com/michaelscaria/images/Minneapolis.png",
+            "default_link": "http://commons.wikimedia.org/wiki/File%3AMinneapolis_skyline_51.JPG",
+            "minneapolis": {
+                "image_url": "https://s3-us-west-1.amazonaws.com/michaelscaria/images/Minneapolis.png",
+                "link": "http://commons.wikimedia.org/wiki/File%3AMinneapolis_skyline_51.JPG"
+            }
+        },
+        "missouri": {
+            "info": [
+                "66 million americans",
+                "flat prairie farmed for corn, soybean, wheat, and livestock grazing",
+                "hot, humid summers and cold winters",
+                "july 12-16, 1995 heat wave with over 700 heat-related deaths",
+                "a lot of ticks and mosquitoes",
+                "poor air quality",
+                "intense precipitation which means flood damage and travel delays",
+                "the great lakes are part of the geography and contain 78% of north america's freshwater"
+            ],
+            "default_image": "https://s3-us-west-1.amazonaws.com/michaelscaria/images/St.+Louis.png",
+            "default_link": "http://www.flickr.com/photos/chriswaits/5831618166/",
+            "kansas city": {
+                "image_url": "https://s3-us-west-1.amazonaws.com/michaelscaria/images/Kansas+City.png",
+                "link": "http://commons.wikimedia.org/wiki/File%3AKansas_City_MO_Skyline_14July2008v.jpg"
+            },
+            "st. louis": {
+                "image_url": "https://s3-us-west-1.amazonaws.com/michaelscaria/images/St.+Louis.png",
+                "link": "http://www.flickr.com/photos/chriswaits/5831618166/"
+            }
+        },
+        "ohio": {
+            "info": [
+                "66 million americans",
+                "flat prairie farmed for corn, soybean, wheat, and livestock grazing",
+                "hot, humid summers and cold winters",
+                "july 12-16, 1995 heat wave with over 700 heat-related deaths",
+                "a lot of ticks and mosquitoes",
+                "poor air quality",
+                "intense precipitation which means flood damage and travel delays",
+                "the great lakes are part of the geography and contain 78% of north america's freshwater"
+            ],
+            "default_image": "https://s3-us-west-1.amazonaws.com/michaelscaria/images/Columbus.png",
+            "default_link": "http://commons.wikimedia.org/wiki/File%3AColumbusNightSkyline2.jpg",
+            "cleveland": {
+                "image_url": "https://s3-us-west-1.amazonaws.com/michaelscaria/images/Cleveland.png",
+                "link": "http://commons.wikimedia.org/wiki/File%3ADowntown_Cleveland.JPG"
+            },
+            "columbus": {
+                "image_url": "https://s3-us-west-1.amazonaws.com/michaelscaria/images/Columbus.png",
+                "link": "http://commons.wikimedia.org/wiki/File%3AColumbusNightSkyline2.jpg"
+            }
+        },
+        "wisconsin": {
+            "info": [
+                "66 million americans",
+                "flat prairie farmed for corn, soybean, wheat, and livestock grazing",
+                "hot, humid summers and cold winters",
+                "july 12-16, 1995 heat wave with over 700 heat-related deaths",
+                "a lot of ticks and mosquitoes",
+                "poor air quality",
+                "intense precipitation which means flood damage and travel delays",
+                "the great lakes are part of the geography and contain 78% of north america's freshwater"
+            ],
+            "default_image": "https://s3-us-west-1.amazonaws.com/michaelscaria/images/Milwaukee.png",
+            "default_link": "http://commons.wikimedia.org/wiki/File%3AMilwaukee_skyline.jpg",
+            "milwaukee": {
+                "image_url": "https://s3-us-west-1.amazonaws.com/michaelscaria/images/Milwaukee.png",
+                "link": "http://commons.wikimedia.org/wiki/File%3AMilwaukee_skyline.jpg"
+            }
+        }
+    },
+    "northeast": {
+        "common_text": [
+            "dense cities and sparsely popluated towns",
+            "portions of west virginia and the southern-most state experience more than 20 days per year of 90 degree temps",
+            "northern areas of maine experience only one day per year abover 90 degrees",
+            "majority of winter precipitation falls as rain and not snow"
+        ],
+        "new york": {
+            "info": [
+                "dense cities and sparsely popluated towns",
+                "portions of west virginia and the southern-most state experience more than 20 days per year of 90 degree temps",
+                "northern areas of maine experience only one day per year abover 90 degrees",
+                "majority of winter precipitation falls as rain and not snow"
+            ],
+            "default_image": "https://s3-us-west-1.amazonaws.com/michaelscaria/images/New+York.png",
+            "default_link": "http://commons.wikimedia.org/wiki/File%3ATop_of_Rock_Cropped.jpg",
+            "new york": {
+                "image_url": "https://s3-us-west-1.amazonaws.com/michaelscaria/images/New+York.png",
+                "link": "http://commons.wikimedia.org/wiki/File%3ATop_of_Rock_Cropped.jpg"
+            }
+        }
+    },
+    "mid-atlantic": {
+        "common_text": [
+            "hot and humid summers especially along the coast where temperatures are above 65-85% humidity",
+            "35-40 inches of rain throughout the year",
+            "snow and wind during the winter"
+        ],
+        "pennsylvania": {
+            "info": [
+                "hot and humid summers especially along the coast where temperatures are above 65-85% humidity",
+                "35-40 inches of rain throughout the year",
+                "snow and wind during the winter"
+            ],
+            "default_image": "https://s3-us-west-1.amazonaws.com/michaelscaria/images/Philadelphia.png",
+            "default_link": "http://commons.wikimedia.org/wiki/File%3APhilly_skyline.jpg",
+            "philadelphia": {
+                "image_url": "https://s3-us-west-1.amazonaws.com/michaelscaria/images/Philadelphia.png",
+                "link": "http://commons.wikimedia.org/wiki/File%3APhilly_skyline.jpg"
+            }
+        },
+        "virginia": {
+            "info": [
+                "hot and humid summers especially along the coast where temperatures are above 65-85% humidity",
+                "35-40 inches of rain throughout the year",
+                "snow and wind during the winter"
+            ],
+            "default_image": "https://s3-us-west-1.amazonaws.com/michaelscaria/images/Virginia+Beach.png",
+            "default_link": "http://commons.wikimedia.org/wiki/File%3AVA_Beach_Town_Center.jpg",
+            "virginia beach": {
+                "image_url": "https://s3-us-west-1.amazonaws.com/michaelscaria/images/Virginia+Beach.png",
+                "link": "http://commons.wikimedia.org/wiki/File%3AVA_Beach_Town_Center.jpg"
+            }
+        },
+        "washington d.c.": {
+            "info": [
+                "hot and humid summers especially along the coast where temperatures are above 65-85% humidity",
+                "35-40 inches of rain throughout the year",
+                "snow and wind during the winter"
+            ],
+            "default_image": "https://s3-us-west-1.amazonaws.com/michaelscaria/images/WashMonument.png",
+            "default_link": "http://commons.wikimedia.org/wiki/File%3AWashMonument_WhiteHouse.jpg",
+            "washington d.c.": {
+                "image_url": "https://s3-us-west-1.amazonaws.com/michaelscaria/images/WashMonument.png",
+                "link": "http://commons.wikimedia.org/wiki/File%3AWashMonument_WhiteHouse.jpg"
+            }
+        }
+    },
+    "southeast": {
+        "common_text": [
+            "there are over 70 million people in the southeast",
+            "29,000 miles of coastline",
+            "warm and wet climate with mild and humid winters",
+            "droughts occur in the spring and summer, so water conservation is extremely important"
+        ],
+        "florida": {
+            "info": [
+                "there are over 70 million people in the southeast",
+                "29,000 miles of coastline",
+                "warm and wet climate with mild and humid winters",
+                "droughts occur in the spring and summer, so water conservation is extremely important"
+            ],
+            "default_image": "https://s3-us-west-1.amazonaws.com/michaelscaria/images/Miami.png",
+            "default_link": "http://commons.wikimedia.org/wiki/File%3ADowntown_Miami_skyline_May_2011.jpg",
+            "jacksonville": {
+                "image_url": "https://s3-us-west-1.amazonaws.com/michaelscaria/images/Jacksonville.png",
+                "link": "http://commons.wikimedia.org/wiki/File%3ANightJXFL11.jpg"
+            },
+            "miami": {
+                "image_url": "https://s3-us-west-1.amazonaws.com/michaelscaria/images/Miami.png",
+                "link": "http://commons.wikimedia.org/wiki/File%3ADowntown_Miami_skyline_May_2011.jpg"
+            },
+            "orlando": {
+                "image_url": "https://s3-us-west-1.amazonaws.com/michaelscaria/images/Orlando.png",
+                "link": "http://www.flickr.com/photos/tombricker/9706034676/"
+            }
+        },
+        "georgia": {
+            "info": [
+                "there are over 70 million people in the southeast",
+                "29,000 miles of coastline",
+                "warm and wet climate with mild and humid winters",
+                "droughts occur in the spring and summer, so water conservation is extremely important"
+            ],
+            "default_image": "https://s3-us-west-1.amazonaws.com/michaelscaria/images/Atlanta.png",
+            "default_link": "http://commons.wikimedia.org/wiki/File%3AAtlanta_Skyline_from_Buckhead.jpg",
+            "atlanta": {
+                "image_url": "https://s3-us-west-1.amazonaws.com/michaelscaria/images/Atlanta.png",
+                "link": "http://commons.wikimedia.org/wiki/File%3AAtlanta_Skyline_from_Buckhead.jpg"
+            }
+        },
+        "north carolina": {
+            "info": [
+                "there are over 70 million people in the southeast",
+                "29,000 miles of coastline",
+                "warm and wet climate with mild and humid winters",
+                "droughts occur in the spring and summer, so water conservation is extremely important"
+            ],
+            "default_image": "https://s3-us-west-1.amazonaws.com/michaelscaria/images/Raleigh.png",
+            "default_link": "http://commons.wikimedia.org/wiki/File%3ADowntown-Raleigh-from-Western-Boulevard-Overpass-20081012.jpeg",
+            "raleigh": {
+                "image_url": "https://s3-us-west-1.amazonaws.com/michaelscaria/images/Raleigh.png",
+                "link": "http://commons.wikimedia.org/wiki/File%3ADowntown-Raleigh-from-Western-Boulevard-Overpass-20081012.jpeg"
+            }
+        },
+        "tennessee": {
+            "info": [
+                "there are over 70 million people in the southeast",
+                "29,000 miles of coastline",
+                "warm and wet climate with mild and humid winters",
+                "droughts occur in the spring and summer, so water conservation is extremely important"
+            ],
+            "default_image": "https://s3-us-west-1.amazonaws.com/michaelscaria/images/Nashville.png",
+            "default_link": "http://commons.wikimedia.org/wiki/File%3ANashvilleskyline23.jpg",
+            "nashville": {
+                "image_url": "https://s3-us-west-1.amazonaws.com/michaelscaria/images/Nashville.png",
+                "link": "http://commons.wikimedia.org/wiki/File%3ANashvilleskyline23.jpg"
+            }
+        }
+    },
+    "rocky mountain west": {
+        "common_text": [
+            "the weather in the rocky mountain west can change rapidly",
+            "in the winter there are sudden blizzards, high wind, and deep snowpacks",
+            "in the spring the weather alternates between warm and cold, wet and dry",
+            "in the summer the temperatures can read 70's or 80's during the day and drop to 40's at night",
+            "in the fall the weather is clear, crisp air, blue skies, and generally dry weather but early snowstorms may occur"
+        ],
+        "arizona": {
+            "info": [
+                "the weather in the rocky mountain west can change rapidly",
+                "in the winter there are sudden blizzards, high wind, and deep snowpacks",
+                "in the spring the weather alternates between warm and cold, wet and dry",
+                "in the summer the temperatures can read 70's or 80's during the day and drop to 40's at night",
+                "in the fall the weather is clear, crisp air, blue skies, and generally dry weather but early snowstorms may occur"
+            ],
+            "default_image": "https://s3-us-west-1.amazonaws.com/michaelscaria/images/Phoenix.png",
+            "default_link": "http://commons.wikimedia.org/wiki/File%3ADowntown_Phoenix_Aerial_Looking_Northeast.jpg",
+            "mesa": {
+                "image_url": "https://s3-us-west-1.amazonaws.com/michaelscaria/images/Mesa.png",
+                "link": "http://commons.wikimedia.org/wiki/File%3ADowntown_Mesa_Arizona.jpg"
+            },
+            "phoenix": {
+                "image_url": "https://s3-us-west-1.amazonaws.com/michaelscaria/images/Phoenix.png",
+                "link": "http://commons.wikimedia.org/wiki/File%3ADowntown_Phoenix_Aerial_Looking_Northeast.jpg"
+            }
+        }
+    },
+    "pacific coast": {
+        "common_text": [
+            "there are over 70 million people in the southeast",
+            "29,000 miles of coastline",
+            "warm and wet climate with mild and humid winters",
+            "droughts occur in the spring and summer, so water conservation is extremely important"
+        ],
+        "california": {
+            "default_image": "https://s3-us-west-1.amazonaws.com/michaelscaria/images/Long+Beach.png",
+            "default_link": "http://commons.wikimedia.org/wiki/File%3ALong_Beach%2C_CA_at_night.jpg",
+            "info": [
+                "a lot of rain in the winter and hardly any during the summer",
+                "40-60 degrees in the winter",
+                "50-70 degrees in the summer",
+                "mild and sunny"
+            ],
+            "Long Beach": {
+                "image_url": "https://s3-us-west-1.amazonaws.com/michaelscaria/images/Long+Beach.png",
+                "link": "http://commons.wikimedia.org/wiki/File%3ALong_Beach%2C_CA_at_night.jpg"
+            },
+            "Los Angeles": {
+                "image_url": "https://s3-us-west-1.amazonaws.com/michaelscaria/images/Los+Angelos.png",
+                "link": "http://commons.wikimedia.org/wiki/File%3ALA_Skyline_Mountains2.jpg"
+            },
+            "Sacramento": {
+                "image_url": "https://s3-us-west-1.amazonaws.com/michaelscaria/images/Sacramento.png",
+                "link": "http://commons.wikimedia.org/wiki/File%3ASacramento_Riverfront.jpg"
+            },
+            "San Francisco": {
+                "image_url": "https://s3-us-west-1.amazonaws.com/michaelscaria/images/San+Francisco.png",
+                "link": "http://commons.wikimedia.org/wiki/File%3AFinancialNorth.jpg"
+            },
+            "San Diego": {
+                "image_url": "https://s3-us-west-1.amazonaws.com/michaelscaria/images/SanDiego.png",
+                "link": "http://commons.wikimedia.org/wiki/File%3ASanDiegoSkylineBay.jpg"
+            }
+        }
+    }
 }
-
