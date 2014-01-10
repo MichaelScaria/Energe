@@ -41,7 +41,7 @@ a {
 .header {
   /*background-image: linear-gradient(-180deg,#39bf9f 0, #02906e 100%);*/
   /*-webkit-box-shadow: rgba(0,0,0,0.15) 0 3px 4px 0,rgba(0,0,0,0.15) 0 -1px 0 0 inset;*/
-  height: 120px;
+  height: 10%;
   position: fixed;
   width: 100%;
   top: 0;
@@ -173,7 +173,6 @@ a.button::selection {
   -ms-transition: all 1.0s ease-in-out;
   transition: all 1.0s ease-in-out;
   max-width: 1400px;
-  height: 250px;
   margin: 4% auto 0;
   display: block;
 }
