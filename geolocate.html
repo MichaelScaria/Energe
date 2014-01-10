@@ -31,7 +31,7 @@
 				<div class="button custom">ENTER LOCATION</div>
 			</div>
 		</div>
-		
+
 	</body>
 </html>
 
@@ -86,6 +86,7 @@
 	var mappingInfo;
 	$.get('assets/data/mapping.json', function(data) {    
 	    mappingInfo = JSON.parse(data);
+	    console.log(mappingInfo);
 	});
 
   var locationInfo;
