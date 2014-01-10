@@ -39,9 +39,6 @@ a {
 
 
 .header {
-  /*background-image: linear-gradient(-180deg,#39bf9f 0, #02906e 100%);*/
-  /*-webkit-box-shadow: rgba(0,0,0,0.15) 0 3px 4px 0,rgba(0,0,0,0.15) 0 -1px 0 0 inset;*/
-  height: 10%;
   position: fixed;
   width: 100%;
   top: 0;
@@ -145,17 +142,17 @@ a.button::selection {
 }
 
 .steps {
-    height: 550px;
+  padding: 40px;
 }
 
 .content .steps .title {
-    /*top, right, bottom, left*/
-    padding: 5% 0 0 0;
-    color: black;
-    font-size: 34px;
-    font-family: 'Open Sans';
-    text-align: center;
-    margin-bottom: 35px;
+  /*top, right, bottom, left*/
+  padding: 0;
+  color: black;
+  font-size: 34px;
+  font-family: 'Open Sans';
+  text-align: center;
+  margin-bottom: 35px;
 }
 
 .border {
@@ -167,52 +164,17 @@ a.button::selection {
 }
 
 .elements {
-  -webkit-transition: all 1.0s ease-in-out;
-  -moz-transition: all 1.0s ease-in-out;
-  -o-transition: all 1.0s ease-in-out;
-  -ms-transition: all 1.0s ease-in-out;
-  transition: all 1.0s ease-in-out;
-  max-width: 1400px;
-  margin: 4% auto 0;
-  display: block;
+  text-align: center;
 }
 
 .element {
   display: inline-block;
-  float: left;
-  height: 210px;
-  width: 33.33%;
-  transition: all 1.0s ease-in-out;
-
+  vertical-align: middle;
+  width: 30%;
 }
 
-.element.middle{
-  /*margin: 0 7% 0 7%;*/
-}
-
-.element .activity_1 {
-  width: 262px;
-  height: 180px;
-  background: url(../images/step1.png) no-repeat scroll center 0;
-  background-size: 262px 180px;
-
-  margin: 0 auto;
-}
-
-.element .activity_2 {
-  width: 180px;
-  height: 180px;
-  background: url(../images/step2.png) no-repeat scroll center 0;
-  background-size: 180px 180px;
-  margin: 0 auto;
-}
-
-.element .activity_3 {
-  width: 180px;
-  height: 180px;
-  background: url(../images/step3.png) no-repeat scroll center 0;
-  background-size: 180px 180px;
-  margin: 0 auto;
+.element img {
+ width: 100%;
 }
 
 .element .text {
