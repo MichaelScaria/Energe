@@ -101,7 +101,6 @@
 		$(".tags").prop('disabled', false);
 		$.getJSON('http://freegeoip.net/json/', function(location) {
 			//if ip address is trackable
-			console.log(locationInfo);
 			if (location.city && location.region_name) {
 			 	search(location.city, location.region_name);
 			};
